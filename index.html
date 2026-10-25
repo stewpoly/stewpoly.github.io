@@ -45,6 +45,10 @@
   .cta{display:inline-block;margin-top:24px;padding:12px 30px;color:#3a2010;background:linear-gradient(#ffd68f,#f0a54d);
     border-radius:99px;font-size:1.05rem;font-weight:600;text-decoration:none;
     box-shadow:0 5px 0 #8a5522,0 12px 26px rgba(0,0,0,.35);transition:transform .15s,box-shadow .15s}
+  .btns{display:flex;flex-wrap:wrap;gap:12px 14px;justify-content:center;margin-top:24px}
+  .btns .cta{margin-top:0}
+  .cta.ig{color:var(--fire2);background:linear-gradient(#5a3720,#3f2514);box-shadow:0 5px 0 #1c0f07,0 12px 26px rgba(0,0,0,.35),inset 0 0 0 2px rgba(255,214,143,.45)}
+  .cta.ig:hover{box-shadow:0 2px 0 #1c0f07,0 8px 20px rgba(0,0,0,.35),inset 0 0 0 2px rgba(255,214,143,.6)}
   .cta:hover{transform:translateY(3px);box-shadow:0 2px 0 #8a5522,0 8px 20px rgba(0,0,0,.35)}
 
   /* 불씨 */
@@ -139,7 +143,10 @@
     </div>
     <h1>stewpoly</h1>
     <p class="bio">Low-poly fantasy cooking &amp; cozy worlds.<br><b>Your orders, cooked for adventurers.</b></p>
-    <a class="cta" href="#menu">🍲 All dishes ↓</a>
+    <div class="btns">
+      <a class="cta" href="#menu">🍲 All dishes ↓</a>
+      <a class="cta ig" href="https://www.instagram.com/stewpoly/" target="_blank" rel="noopener">Instagram @stewpoly</a>
+    </div>
   </header>
 
   <div class="signwrap" id="menu"><h2 class="signboard">Menu<small id="count"></small></h2></div>
@@ -156,7 +163,7 @@
 </div>
 
 <div class="forest" aria-hidden="true"></div>
-<div class="groundbar">stewpoly · low-poly fantasy kitchen</div>
+<div class="groundbar">stewpoly · low-poly fantasy kitchen · <a href="https://www.instagram.com/stewpoly/" target="_blank" rel="noopener" style="color:var(--fire2)">@stewpoly</a></div>
 
 <dialog id="dlg">
   <button class="close" aria-label="Close">×</button>
