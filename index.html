@@ -3,172 +3,355 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>stewpoly — All dishes</title>
-<meta name="description" content="Low-poly fantasy cooking & cozy worlds. Your orders, cooked for adventurers.">
-<meta property="og:title" content="stewpoly — All dishes">
-<meta property="og:description" content="Low-poly fantasy cooking & cozy worlds. Your orders, cooked for adventurers.">
+<title>stewpoly — Comment a dish. We cook it.</title>
+<meta name="description" content="A low-poly fantasy kitchen at night. Comment any dish on our reel and we cook it for you.">
+<meta property="og:title" content="stewpoly — Comment a dish. We cook it.">
+<meta property="og:description" content="A low-poly fantasy kitchen at night. Comment any dish on our reel and we cook it for you.">
 <meta property="og:image" content="https://stewpoly.github.io/img/og.jpg">
-<meta name="theme-color" content="#3a2314">
+<meta name="theme-color" content="#120c1c">
 <link rel="icon" href="img/avatar.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  :root{--ink:#fff0d6;--dim:#e0c39b;--fire:#ffb457;--fire2:#ffd68f;--honey:#e8a95c;
-    --plank:#74492a;--plank2:#5a3720;--dark:#2a180d;
-    --head:"Fredoka","Baloo 2","Trebuchet MS",system-ui,sans-serif;--body:"Nunito",system-ui,sans-serif}
+  /* 계정 룩 가이드: 어두운 보랏빛 밤 + 따뜻한 등불 하나 */
+  :root{
+    --night:#120c1c;--night2:#1b1229;--plum:#2a1d3d;--plum2:#3a2a52;--lilac:#b885ff;
+    --ink:#fff1dc;--dim:#cbb9d6;--fire:#ffb457;--fire2:#ffd68f;--sauce:#d2541a;--herb:#5fae3e;--paper:#f6ead2;
+    --head:"Fredoka","Trebuchet MS",system-ui,sans-serif;--body:"Nunito",system-ui,sans-serif;--mono:"Courier Prime","Courier New",monospace}
   *{box-sizing:border-box;margin:0}
-  html{background:#3a2314;scroll-behavior:smooth}
-  body{min-height:100vh;color:var(--ink);font:400 17px/1.6 var(--body);overflow-x:hidden;-webkit-font-smoothing:antialiased;
-    /* 통나무 벽 */
-    background:
-      radial-gradient(900px 620px at 50% 0,rgba(255,170,80,.30),rgba(255,170,80,0) 70%),
-      radial-gradient(ellipse at 50% 40%,rgba(0,0,0,0) 55%,rgba(20,10,4,.55) 100%),
-      linear-gradient(180deg,#6a4126 0,#583519 38%,#472a15 86%,#2f1b0d 100%) 0 0/100% 76px,
-      #472a15}
-  .wrap{max-width:1000px;margin:0 auto;padding:0 20px;position:relative}
-  h1,h2,h3,.cta,.pf,.rule{font-family:var(--head)}
+  html{background:var(--night);scroll-behavior:smooth}
+  body{color:var(--ink);font:400 17px/1.6 var(--body);overflow-x:hidden;-webkit-font-smoothing:antialiased;
+    background:linear-gradient(180deg,var(--night) 0,var(--night2) 40%,#150e21 100%)}
+  h1,h2,h3,.btn,.kicker{font-family:var(--head)}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 16px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 26px;border-radius:99px;font-size:1.02rem;font-weight:600;
+    text-decoration:none;cursor:pointer;border:0;color:#2b160a;background:linear-gradient(#ffd68f,#f0a54d);
+    box-shadow:0 5px 0 #8a5522,0 14px 30px rgba(255,150,60,.25);transition:transform .15s,box-shadow .15s}
+  .btn:hover{transform:translateY(3px);box-shadow:0 2px 0 #8a5522,0 8px 20px rgba(255,150,60,.25)}
+  .btn.ghost{color:var(--fire2);background:rgba(42,29,61,.7);box-shadow:inset 0 0 0 2px rgba(255,214,143,.45),0 10px 24px rgba(0,0,0,.35)}
+  .btn.ghost:hover{box-shadow:inset 0 0 0 2px rgba(255,214,143,.75),0 6px 16px rgba(0,0,0,.35)}
+  .kicker{display:block;color:var(--fire);font-size:.85rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
 
-  /* ── 히어로: 오두막 창가의 등불 ── */
-  .hero{text-align:center;padding:46px 0 30px;position:relative}
-  .stage{position:relative;width:min(80vw,420px);aspect-ratio:1;margin:0 auto;border-radius:50%;overflow:hidden;
-    border:12px solid #7b4a28;touch-action:pan-y;
-    box-shadow:0 0 0 4px #2a180d,0 0 0 8px #a56d3a,0 0 70px 14px rgba(255,170,80,.4),inset 0 0 26px rgba(0,0,0,.6)}
-  .stage img{width:100%;height:100%;object-fit:cover;display:block}
-  .stage::after{content:"";position:absolute;inset:0;pointer-events:none;
-    background:radial-gradient(circle var(--r,150px) at var(--mx,50%) var(--my,45%),
-      rgba(42,24,13,0) 0%,rgba(42,24,13,.3) 50%,rgba(42,24,13,.85) 100%)}
-  .hero h1{font-size:clamp(3rem,11vw,4.8rem);letter-spacing:.02em;margin-top:30px;font-weight:700;line-height:1.05;
-    color:var(--fire2);text-shadow:0 3px 0 #7a4519,0 6px 0 #3b2010,0 0 30px rgba(255,170,80,.55)}
-  .bio{color:var(--dim);margin-top:14px;max-width:30em;margin-inline:auto;font-weight:600}
-  .bio b{color:var(--ink);font-weight:700}
-  .cta{display:inline-block;margin-top:24px;padding:12px 30px;color:#3a2010;background:linear-gradient(#ffd68f,#f0a54d);
-    border-radius:99px;font-size:1.05rem;font-weight:600;text-decoration:none;
-    box-shadow:0 5px 0 #8a5522,0 12px 26px rgba(0,0,0,.35);transition:transform .15s,box-shadow .15s}
-  .btns{display:flex;flex-wrap:wrap;gap:12px 14px;justify-content:center;margin-top:24px}
-  .btns .cta{margin-top:0}
-  .cta.ig{color:var(--fire2);background:linear-gradient(#5a3720,#3f2514);box-shadow:0 5px 0 #1c0f07,0 12px 26px rgba(0,0,0,.35),inset 0 0 0 2px rgba(255,214,143,.45)}
-  .cta.ig:hover{box-shadow:0 2px 0 #1c0f07,0 8px 20px rgba(0,0,0,.35),inset 0 0 0 2px rgba(255,214,143,.6)}
-  .cta:hover{transform:translateY(3px);box-shadow:0 2px 0 #8a5522,0 8px 20px rgba(0,0,0,.35)}
+  /* ── 1. 히어로: 화면 전체가 어둡고, 등불이 스튜를 비춘다 ── */
+  .hero{position:relative;height:100svh;min-height:560px;overflow:hidden;background:var(--night);touch-action:pan-y;cursor:none}
+  .hero .dish{position:absolute;left:50%;top:44%;width:min(96vw,82svh,820px);aspect-ratio:1;transform:translate(-50%,-50%);
+    background:url(img/stew.jpg) center/cover;
+    -webkit-mask-image:radial-gradient(circle at 50% 50%,#000 46%,transparent 71%);mask-image:radial-gradient(circle at 50% 50%,#000 46%,transparent 71%)}
+  .hero .dark{position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(circle var(--r,260px) at var(--mx,50%) var(--my,44%),
+      rgba(18,12,28,0) 0%,rgba(18,12,28,.35) 42%,rgba(14,9,22,.93) 100%)}
+  .hero .warm{position:absolute;inset:0;pointer-events:none;mix-blend-mode:soft-light;
+    background:radial-gradient(circle calc(var(--r,260px)*.9) at var(--mx,50%) var(--my,44%),rgba(255,170,90,.75),rgba(255,170,90,0) 70%)}
+  .hero canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+  .lamp{position:absolute;left:0;top:0;width:44px;height:44px;margin:-22px 0 0 -22px;pointer-events:none;border-radius:50%;
+    background:radial-gradient(circle,#fff6e0 0 16%,rgba(255,200,120,.9) 22%,rgba(255,170,80,.25) 48%,transparent 70%);
+    filter:blur(.3px);will-change:transform}
+  .hero-copy{position:absolute;left:0;right:0;bottom:max(7svh,40px);text-align:center;padding:0 16px;pointer-events:none}
+  .hero h1{font-size:clamp(3.4rem,13vw,7.4rem);font-weight:700;line-height:.95;letter-spacing:.01em;color:var(--fire2);
+    text-shadow:0 4px 0 #7a4519,0 8px 0 #2b160a,0 0 50px rgba(255,170,80,.45)}
+  .hero p{margin-top:14px;font-size:clamp(1.02rem,2.6vw,1.25rem);font-weight:600;color:var(--dim)}
+  .hero p b{color:var(--ink)}
+  .hero .btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:22px;pointer-events:auto}
+  .hint{position:absolute;top:22px;left:0;right:0;text-align:center;font:600 .82rem var(--body);letter-spacing:.14em;
+    text-transform:uppercase;color:rgba(255,214,143,.6);transition:opacity .8s}
+  .hint.gone{opacity:0}
+  .scrollcue{display:block;margin:18px auto 0;width:22px;height:34px;border:2px solid rgba(255,214,143,.5);border-radius:12px;position:relative}
+  .scrollcue::after{content:"";position:absolute;left:50%;top:7px;width:4px;height:7px;margin-left:-2px;border-radius:2px;background:var(--fire2);
+    animation:cue 1.8s ease-in-out infinite}
+  @keyframes cue{0%{transform:translateY(0);opacity:1}70%{transform:translateY(11px);opacity:0}100%{opacity:0}}
 
-  /* 불씨 */
-  .embers{position:absolute;inset:0;pointer-events:none;overflow:hidden}
-  .embers i{position:absolute;bottom:-10px;border-radius:50%;background:var(--fire2);
-    box-shadow:0 0 8px 2px rgba(255,170,80,.75);opacity:0;animation:rise linear infinite}
-  @keyframes rise{0%{transform:translate(0,0);opacity:0}12%{opacity:.9}100%{transform:translate(var(--dx,20px),-640px);opacity:0}}
+  /* ── 2. 스크롤 스토리: 댓글 → 요리 → 서빙 ── */
+  .story{position:relative;margin-top:8vh}
+  .story-in{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+  .stage{position:sticky;top:0;height:100svh;display:flex;align-items:center;justify-content:center}
+  .scene{position:relative;width:min(100%,440px);aspect-ratio:1}
+  .scene::before{content:"";position:absolute;inset:-6%;border-radius:50%;
+    background:radial-gradient(circle at 60% 35%,rgba(255,170,90,.22),rgba(184,133,255,.08) 45%,transparent 70%)}
+  .steps{padding:30svh 0 40svh}
+  .step{min-height:80svh;display:flex;flex-direction:column;justify-content:center;opacity:.25;transition:opacity .5s}
+  .step.on{opacity:1}
+  .step .num{font:700 4.6rem/1 var(--head);color:transparent;-webkit-text-stroke:2px rgba(255,214,143,.55)}
+  .step h2{font-size:clamp(2rem,5vw,3rem);line-height:1.1;margin-top:8px;font-weight:600}
+  .step h2 em{font-style:normal;color:var(--fire)}
+  .step p{color:var(--dim);margin-top:12px;max-width:26em;font-weight:600}
 
-  /* ── 매달린 메뉴 간판 ── */
-  .signwrap{position:relative;width:max-content;max-width:100%;margin:70px auto 38px}
-  .signwrap::before,.signwrap::after{content:"";position:absolute;top:-34px;width:3px;height:36px;background:#c9a06a;
-    box-shadow:0 0 0 1px rgba(0,0,0,.25)}
-  .signwrap::before{left:22%}.signwrap::after{right:22%}
-  .signboard{padding:12px 44px 10px;text-align:center;transform-origin:50% -34px;animation:sway 5s ease-in-out infinite;
-    background:linear-gradient(#845229,#64401f);border:3px solid #2a180d;border-radius:14px;
-    box-shadow:0 6px 0 #2a180d,0 14px 30px rgba(0,0,0,.45),inset 0 0 0 3px rgba(255,214,143,.25);
-    font-size:1.7rem;font-weight:700;letter-spacing:.14em;color:var(--fire2);text-shadow:0 2px 0 #3b2010;position:relative}
-  .signboard small{display:block;font-family:var(--body);letter-spacing:.04em;color:var(--dim);font-weight:600;font-size:.82rem;text-shadow:none}
-  @keyframes sway{0%,100%{transform:rotate(-1.4deg)}50%{transform:rotate(1.4deg)}}
+  /* 장면 안의 물건들: data-step에 따라 자리를 옮긴다 */
+  .obj{position:absolute;transition:transform .9s cubic-bezier(.2,.8,.2,1),opacity .6s}
+  .cmt{left:6%;right:6%;top:30%;display:flex;gap:12px;align-items:flex-start;padding:16px 18px;border-radius:18px;
+    background:#fffaf2;color:#1e1428;box-shadow:0 24px 50px rgba(0,0,0,.5);font:600 1rem/1.4 var(--body)}
+  .cmt .av{flex:none;width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#9fb6d6,#4d5f86);
+    display:flex;align-items:center;justify-content:center;font:700 1.15rem var(--head);color:#fff}
+  .cmt b{display:block;font:700 .92rem var(--body)}
+  .cmt .txt{font-size:1.12rem}
+  .cmt .meta{display:flex;gap:16px;margin-top:6px;color:#8b7f95;font-size:.82rem}
+  .cmt .meta i{font-style:normal;color:#e0445a}
+  .pot{left:12%;right:12%;bottom:2%;opacity:0;transform:translateY(40px) scale(.9)}
+  .pot svg{display:block;width:100%;height:auto;overflow:visible}
+  .flame{transform-box:fill-box;transform-origin:50% 100%;animation:flick .5s ease-in-out infinite alternate}
+  .flame.b{animation-duration:.37s}.flame.c{animation-duration:.61s}
+  @keyframes flick{from{transform:scaleY(.86) skewX(-3deg)}to{transform:scaleY(1.08) skewX(3deg)}}
+  .bub{animation:bub 2.4s ease-in infinite;transform-box:fill-box;transform-origin:center}
+  @keyframes bub{0%{transform:scale(.2);opacity:0}30%{opacity:1}80%{transform:scale(1);opacity:1}100%{transform:scale(1.2);opacity:0}}
+  .tk{left:50%;top:2%;width:46%;padding:12px 14px 16px;transform:translate(-50%,-30px) rotate(-4deg);opacity:0;
+    background:var(--paper);color:#3a2a20;font:400 .82rem/1.35 var(--mono);box-shadow:0 14px 30px rgba(0,0,0,.45);
+    -webkit-mask:radial-gradient(circle 5px at 50% 100%,transparent 98%,#000) 0 0/12px 100% repeat-x;
+            mask:radial-gradient(circle 5px at 50% 100%,transparent 98%,#000) 0 0/12px 100% repeat-x}
+  .tk b{display:block;font-weight:700;font-size:.95rem;border-bottom:1px dashed #a08a70;padding-bottom:4px;margin-bottom:6px}
+  .tk .pin{position:absolute;top:6px;left:50%;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:#c0392b;box-shadow:0 2px 0 #6e1d14}
+  .reel{left:22%;right:22%;top:3%;bottom:3%;border-radius:22px;overflow:hidden;opacity:0;transform:translateY(60px) scale(.92);
+    background:url(img/stew.jpg) center/cover;box-shadow:0 0 0 3px rgba(255,214,143,.5),0 30px 60px rgba(0,0,0,.6)}
+  .reel::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(10,6,18,.85))}
+  .reel .cap{position:absolute;left:14px;right:14px;bottom:14px;z-index:1;font:600 .86rem/1.35 var(--body)}
+  .reel .cap b{display:block;font:600 1.05rem var(--head);color:var(--fire2)}
+  .reel .play{position:absolute;left:50%;top:44%;width:58px;height:58px;margin:-29px 0 0 -29px;border-radius:50%;z-index:1;
+    background:rgba(255,255,255,.22);backdrop-filter:blur(4px)}
+  .reel .play::after{content:"";position:absolute;left:23px;top:18px;border:11px solid transparent;border-left:17px solid #fff;border-right:0}
 
-  /* ── 메뉴판 카드 (통나무 판자) ── */
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,320px));gap:30px;justify-content:center}
-  .card{position:relative;padding:14px 14px 20px;border-radius:18px;cursor:pointer;
-    background:
-      repeating-linear-gradient(90deg,rgba(0,0,0,0) 0 118px,rgba(0,0,0,.18) 118px 120px),
-      linear-gradient(#80502c,#5f3a1f);
-    border:3px solid #2a180d;box-shadow:0 8px 0 #2a180d,0 18px 36px rgba(0,0,0,.5),inset 0 0 0 3px rgba(255,214,143,.2);
-    transition:transform .25s}
-  /* 못 */
-  .card::after{content:"";position:absolute;inset:7px;pointer-events:none;
-    background:
-      radial-gradient(circle,#d9b27a 0 3px,#4a2c14 3.5px 4.5px,transparent 5px) 0 0/10px 10px no-repeat,
-      radial-gradient(circle,#d9b27a 0 3px,#4a2c14 3.5px 4.5px,transparent 5px) 100% 0/10px 10px no-repeat,
-      radial-gradient(circle,#d9b27a 0 3px,#4a2c14 3.5px 4.5px,transparent 5px) 0 100%/10px 10px no-repeat,
-      radial-gradient(circle,#d9b27a 0 3px,#4a2c14 3.5px 4.5px,transparent 5px) 100% 100%/10px 10px no-repeat}
-  .card::before{content:"";position:absolute;inset:0;border-radius:15px;pointer-events:none;opacity:0;transition:opacity .25s;
-    background:radial-gradient(240px circle at var(--x,50%) var(--y,30%),rgba(255,214,143,.3),transparent 70%)}
-  .card:hover{transform:translateY(-6px) rotate(-.6deg)}
-  .card:hover::before{opacity:1}
-  .card .ph{border-radius:10px;overflow:hidden;border:3px solid #2a180d;box-shadow:0 0 0 2px #a56d3a}
-  .card img{display:block;width:100%;aspect-ratio:1;object-fit:cover;transition:transform .5s}
+  .scene[data-step="1"] .cmt{transform:none;opacity:1}
+  .scene[data-step="2"] .cmt,.scene[data-step="3"] .cmt{transform:translateY(-140%) scale(.6) rotate(-6deg);opacity:0}
+  .scene[data-step="2"] .tk{transform:translate(-50%,0) rotate(-4deg);opacity:1}
+  .scene[data-step="2"] .pot{transform:none;opacity:1}
+  .scene[data-step="3"] .tk{transform:translate(-50%,-30px) rotate(-4deg);opacity:0}
+  .scene[data-step="3"] .pot{transform:translateY(60px) scale(.85);opacity:0}
+  .scene[data-step="3"] .reel{transform:none;opacity:1}
+
+  /* ── 3. 주문서 만들기 ── */
+  .orderbox{margin:12svh auto 0;max-width:880px;display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+  .orderbox h2{font-size:clamp(2rem,5vw,2.8rem);line-height:1.1;font-weight:600;margin-top:8px}
+  .orderbox .lead{color:var(--dim);margin-top:10px;font-weight:600}
+  form{margin-top:22px;display:grid;gap:12px}
+  label{font:600 .85rem var(--body);color:var(--dim)}
+  input{width:100%;margin-top:6px;padding:13px 16px;border-radius:14px;border:2px solid rgba(255,214,143,.35);background:rgba(42,29,61,.6);
+    color:var(--ink);font:600 1.05rem var(--body);outline:none;transition:border-color .2s,box-shadow .2s}
+  input:focus{border-color:var(--fire);box-shadow:0 0 0 4px rgba(255,180,87,.18)}
+  input::placeholder{color:rgba(203,185,214,.55)}
+  .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+  .toast{min-height:1.4em;color:var(--fire2);font-weight:700;font-size:.9rem}
+  .rail{position:relative;padding-top:26px}
+  .rail::before{content:"";position:absolute;left:4%;right:4%;top:10px;height:6px;border-radius:3px;background:linear-gradient(#8a7a9e,#4b3d60);
+    box-shadow:0 3px 0 #21162f}
+  .ticket{position:relative;margin:0 auto;width:min(100%,330px);padding:22px 22px 62px;background:var(--paper);color:#3a2a20;
+    font:400 .95rem/1.5 var(--mono);transform-origin:50% 0;box-shadow:0 20px 40px rgba(0,0,0,.5);
+    -webkit-mask:radial-gradient(circle 7px at 50% 100%,transparent 98%,#000) 0 0/16px 100% repeat-x;
+            mask:radial-gradient(circle 7px at 50% 100%,transparent 98%,#000) 0 0/16px 100% repeat-x}
+  .ticket.print{animation:print .7s cubic-bezier(.2,.8,.2,1)}
+  @keyframes print{from{clip-path:inset(0 0 100% 0);transform:translateY(-14px) rotate(-1.5deg)}to{clip-path:inset(0 0 0 0);transform:none}}
+  .ticket .clip{position:absolute;top:-16px;left:50%;width:34px;height:26px;margin-left:-17px;border-radius:6px;background:#9c8bb2;box-shadow:0 3px 0 #4b3d60}
+  .ticket .hd{display:flex;justify-content:space-between;font-weight:700;border-bottom:2px dashed #a08a70;padding-bottom:8px}
+  .ticket .dish{margin:16px 0 4px;font:700 1.45rem/1.2 var(--mono);word-break:break-word;color:#2b160a}
+  .ticket .row{display:flex;gap:6px;color:#6d5848}
+  .ticket .row::after{content:"";order:2;flex:1;border-bottom:2px dotted #b8a284;transform:translateY(-6px)}
+  .ticket .row span:first-child{order:1}.ticket .row span:last-child{order:3;color:#2b160a;font-weight:700}
+  .ticket .stamp{position:absolute;right:20px;bottom:22px;padding:4px 10px;border:3px solid var(--sauce);border-radius:8px;color:var(--sauce);
+    font:700 .85rem var(--head);letter-spacing:.12em;transform:rotate(-12deg);opacity:.85}
+
+  /* ── 4. 메뉴 ── */
+  .menu{margin-top:16svh;text-align:center}
+  .menu h2{font-size:clamp(2rem,5vw,2.8rem);font-weight:600;margin-top:8px}
+  .menu .count{color:var(--dim);font-weight:600;margin-top:4px}
+  .grid{margin-top:34px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,300px));gap:26px;justify-content:center;text-align:left}
+  .card{position:relative;border-radius:22px;overflow:hidden;cursor:pointer;background:var(--plum);
+    box-shadow:0 0 0 2px rgba(255,214,143,.18),0 24px 50px rgba(0,0,0,.45);opacity:0;transform:translateY(30px);
+    transition:opacity .7s,transform .7s cubic-bezier(.2,.8,.2,1),box-shadow .3s}
+  .card.in{opacity:1;transform:none}
+  .card:hover{box-shadow:0 0 0 2px rgba(255,214,143,.6),0 0 60px rgba(255,170,80,.25),0 24px 50px rgba(0,0,0,.45)}
+  .card img{display:block;width:100%;aspect-ratio:1;object-fit:cover;transition:transform .6s}
   .card:hover img{transform:scale(1.05)}
-  .meta{padding:16px 6px 0}
-  .meta h3{font-size:1.3rem;text-align:center;font-weight:600;color:var(--ink)}
-  .rule{display:flex;align-items:baseline;gap:6px;margin-top:10px;font-size:.92rem;color:var(--dim);font-weight:500}
-  .rule::before{content:"";order:2;flex:1;border-bottom:3px dotted rgba(255,214,143,.5);transform:translateY(-3px)}
-  .rule span:first-child{order:1}.rule span:last-child{order:3;color:var(--fire2);font-weight:600}
-  .ing{margin-top:8px;text-align:center;font-size:.86rem;color:var(--dim);font-style:italic}
-  .soon{display:flex;align-items:center;justify-content:center;text-align:center;min-height:200px;
-    border:3px dashed rgba(255,214,143,.35);border-radius:18px;color:var(--dim);padding:24px;font-style:italic;font-weight:600}
+  .card .lit{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s;
+    background:radial-gradient(220px circle at var(--x,50%) var(--y,30%),rgba(255,200,130,.28),transparent 70%)}
+  .card:hover .lit{opacity:1}
+  .card .m{padding:14px 18px 18px}
+  .card h3{font-size:1.25rem;font-weight:600}
+  .card .by{color:var(--fire2);font-size:.88rem;font-weight:700;margin-top:2px}
+  .card .ing{color:var(--dim);font-size:.85rem;margin-top:6px;font-style:italic}
+  .next{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;min-height:260px;border-radius:22px;
+    border:2px dashed rgba(255,214,143,.35);color:var(--dim);text-align:center;padding:24px;font-weight:600;text-decoration:none}
+  .next:hover{border-color:rgba(255,214,143,.7);color:var(--ink)}
+  .next .big{font:600 1.2rem var(--head);color:var(--fire2)}
 
-  /* ── 주문 안내 ── */
-  .order{max-width:560px;margin:80px auto 0;text-align:center}
-  .order h2{font-size:1.5rem;font-weight:600;color:var(--fire2);letter-spacing:.04em}
-  .cmt{margin-top:18px;display:flex;gap:12px;align-items:flex-start;text-align:left;padding:15px 18px;
-    background:rgba(30,15,6,.55);border:3px solid #2a180d;border-radius:18px;box-shadow:inset 0 0 0 2px rgba(255,214,143,.2);
-    font:600 .98rem/1.45 var(--body)}
-  .cmt .pf{flex:none;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#ffb457,#e0613a);
-    display:flex;align-items:center;justify-content:center;font-weight:700;color:#3a2010}
-  .cmt b{display:block;font-family:var(--head);font-weight:600}.cmt .ex{color:var(--dim);font-size:.8rem;margin-top:4px;font-weight:400}
-  .order p{color:var(--dim);margin-top:14px;font-weight:600}
-
-  /* ── 소나무 숲 ── */
-  .forest{margin-top:70px;height:110px;color:#1d1008;opacity:.95;
-    background:
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='110' viewBox='0 0 220 110'%3E%3Cg fill='%231d1008'%3E%3Cpath d='M30 110V92L10 92 30 66 16 66 34 40 22 40 40 10 58 40 46 40 64 66 50 66 70 92 50 92V110z'/%3E%3Cpath d='M130 110V94L112 94 130 72 118 72 136 46 126 46 142 18 158 46 148 46 166 72 154 72 172 94 154 94V110z'/%3E%3Cpath d='M190 110V100L180 100 192 84 184 84 196 66 208 84 200 84 212 100 202 100V110z'/%3E%3C/g%3E%3C/svg%3E") repeat-x bottom/220px 110px}
-  .groundbar{height:46px;background:#1d1008;color:var(--dim);text-align:center;font-size:.86rem;padding-top:12px;font-weight:600}
+  /* ── 바닥 ── */
+  .foot{margin-top:18svh;position:relative;height:150px;
+    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='120' viewBox='0 0 240 120'%3E%3Cg fill='%230b0712'%3E%3Cpath d='M34 120V100L12 100 34 72 18 72 38 44 24 44 44 12 64 44 50 44 70 72 54 72 76 100 54 100V120z'/%3E%3Cpath d='M142 120V102L122 102 142 78 128 78 148 50 136 50 154 20 172 50 160 50 180 78 166 78 186 102 166 102V120z'/%3E%3Cpath d='M206 120V108L194 108 208 90 199 90 212 70 225 90 216 90 230 108 218 108V120z'/%3E%3C/g%3E%3C/svg%3E") repeat-x bottom/240px 120px}
+  .foot::before{content:"";position:absolute;left:50%;top:0;width:min(70vw,600px);height:120px;transform:translateX(-50%);
+    background:radial-gradient(ellipse at 50% 100%,rgba(184,133,255,.18),transparent 70%)}
+  .groundbar{background:#0b0712;color:var(--dim);text-align:center;font-size:.86rem;padding:14px 16px 22px;font-weight:600}
+  .groundbar a{color:var(--fire2)}
 
   /* ── 상세 팝업 ── */
-  dialog{border:3px solid #2a180d;border-radius:20px;background:linear-gradient(#80502c,#5f3a1f);color:var(--ink);
-    max-width:min(92vw,520px);width:100%;padding:12px;overflow:visible;
-    box-shadow:0 0 0 3px #a56d3a,0 0 80px rgba(255,170,80,.3),0 20px 60px rgba(0,0,0,.7)}
-  dialog::backdrop{background:rgba(20,10,4,.85)}
-  dialog img{display:block;width:100%;border-radius:10px;border:3px solid #2a180d}
-  .body{padding:16px 12px 12px;text-align:center}
-  .body h3{font-size:1.4rem;font-weight:600}.by{color:var(--fire2);font-size:.9rem;margin-top:2px;font-weight:600}
-  .body p{color:var(--dim);margin-top:8px}
+  dialog{border:0;border-radius:22px;background:var(--plum);color:var(--ink);max-width:min(92vw,520px);width:100%;padding:0;overflow:visible;
+    box-shadow:0 0 0 2px rgba(255,214,143,.4),0 0 80px rgba(255,170,80,.25),0 20px 60px rgba(0,0,0,.7)}
+  dialog::backdrop{background:rgba(10,6,18,.85)}
+  dialog img{display:block;width:100%;border-radius:22px 22px 0 0}
+  .dbody{padding:16px 20px 22px;text-align:center}
+  .dbody h3{font-size:1.4rem;font-weight:600}.dbody .by{color:var(--fire2);font-size:.9rem;font-weight:700}
+  .dbody p{color:var(--dim);margin-top:8px}
   .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;justify-content:center}
-  .tags span{font-size:.82rem;padding:3px 12px;border:2px solid rgba(255,214,143,.5);border-radius:99px;font-weight:600}
-  .close{position:absolute;top:-14px;right:-10px;background:var(--fire2);color:#3a2010;border:3px solid #2a180d;
-    width:36px;height:36px;border-radius:50%;font:700 1.1rem var(--head);cursor:pointer}
+  .tags span{font-size:.82rem;padding:3px 12px;border:2px solid rgba(255,214,143,.45);border-radius:99px;font-weight:600}
+  .close{position:absolute;top:-14px;right:-10px;background:var(--fire2);color:#2b160a;border:0;width:38px;height:38px;border-radius:50%;
+    font:700 1.1rem var(--head);cursor:pointer;box-shadow:0 4px 0 #8a5522}
 
-  @media (prefers-reduced-motion:reduce){.embers{display:none}.signboard{animation:none}.card,.card img{transition:none}}
+  /* ── 좁은 화면 ── */
+  @media (max-width:760px){
+    .hero{cursor:auto}
+    .lamp{display:none}
+    .story-in{grid-template-columns:1fr;gap:0}
+    .stage{height:56svh;top:0;z-index:2;background:linear-gradient(#1a1128 86%,rgba(26,17,40,0))}
+    .scene{width:min(84vw,46svh)}
+    .steps{padding:6svh 0 20svh;position:relative;z-index:1}
+    .step{min-height:62svh;justify-content:flex-start;padding-top:4svh}
+    .step .num{font-size:3.2rem}
+    .orderbox{grid-template-columns:1fr}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .obj,.card,.step{transition:none}.flame,.bub,.scrollcue::after,.ticket.print{animation:none}
+  }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header class="hero">
-    <div class="embers" id="embers" aria-hidden="true"></div>
-    <div class="stage" id="stage">
-      <img src="img/stew.jpg" alt="A bowl of low-poly fantasy stew lit by a single lantern">
-    </div>
+
+<!-- 1. 히어로 -->
+<header class="hero" id="hero">
+  <div class="dish" role="img" aria-label="A bowl of low-poly fantasy stew lit by a single lantern"></div>
+  <div class="dark"></div>
+  <div class="warm"></div>
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <div class="lamp" id="lamp" aria-hidden="true"></div>
+  <div class="hint" id="hint">Move the lantern</div>
+  <div class="hero-copy">
     <h1>stewpoly</h1>
-    <p class="bio">Low-poly fantasy cooking &amp; cozy worlds.<br><b>Your orders, cooked for adventurers.</b></p>
+    <p>A low-poly fantasy kitchen at night.<br><b>Comment a dish. We cook it.</b></p>
     <div class="btns">
-      <a class="cta" href="#menu">🍲 All dishes ↓</a>
-      <a class="cta ig" href="https://www.instagram.com/stewpoly/" target="_blank" rel="noopener">Instagram @stewpoly</a>
+      <a class="btn" href="#order">Write your order</a>
+      <a class="btn ghost" href="https://www.instagram.com/stewpoly/" target="_blank" rel="noopener">Instagram @stewpoly</a>
     </div>
-  </header>
+    <span class="scrollcue" aria-hidden="true"></span>
+  </div>
+</header>
 
-  <div class="signwrap" id="menu"><h2 class="signboard">Menu<small id="count"></small></h2></div>
+<!-- 2. 스크롤 스토리 -->
+<section class="story wrap" aria-label="How it works">
+  <div class="story-in">
+    <div class="stage">
+      <div class="scene" id="scene" data-step="1" aria-hidden="true">
+        <div class="obj cmt">
+          <div class="av">F</div>
+          <div><b>frosty_wolf</b><div class="txt">dragon egg omelette please!</div>
+            <div class="meta"><span><i>♥</i> 12</span><span>Reply</span></div></div>
+        </div>
+        <div class="obj tk"><span class="pin"></span><b>ORDER</b>dragon egg omelette<br>for: frosty_wolf</div>
+        <div class="obj pot">
+          <svg viewBox="0 0 300 250" aria-hidden="true">
+            <!-- 솥 몸통: 큰 면 위주의 로우폴리 -->
+            <polygon points="40,96 260,96 246,170 54,170" fill="#4a3d5c"/>
+            <polygon points="54,170 246,170 224,214 76,214" fill="#33293f"/>
+            <polygon points="40,96 54,170 76,214 70,150" fill="#3a2f4a"/>
+            <polygon points="260,96 246,170 224,214 232,150" fill="#5b4b70"/>
+            <polygon points="110,96 190,96 186,170 114,170" fill="#55466a"/>
+            <polygon points="114,170 186,170 176,214 124,214" fill="#3d3150"/>
+            <!-- 손잡이 -->
+            <polygon points="26,104 40,98 42,124 28,126" fill="#2a2236"/>
+            <polygon points="274,104 260,98 258,124 272,126" fill="#2a2236"/>
+            <!-- 테두리와 국물 -->
+            <polygon points="30,92 150,74 270,92 150,110" fill="#6a5884"/>
+            <polygon points="46,92 150,80 254,92 150,104" fill="#d2541a"/>
+            <polygon points="70,92 150,82 150,100" fill="#e0662a"/>
+            <polygon points="150,82 230,92 150,100" fill="#b8481a"/>
+            <!-- 건더기 -->
+            <polygon points="92,90 108,84 118,92 104,97" fill="#6b2f1c"/>
+            <polygon points="176,88 192,85 198,94 182,97" fill="#f07a22"/>
+            <polygon points="134,86 146,83 150,91 138,93" fill="#e8c47a"/>
+            <polygon points="208,92 218,89 222,95 212,97" fill="#5fae3e"/>
+            <polygon points="118,96 128,93 132,99 122,100" fill="#5fae3e"/>
+            <!-- 장작과 불: 솥 바닥을 핥도록 몸통 앞에 그린다 -->
+            <polygon points="70,236 150,222 160,232 80,246" fill="#5a3720"/>
+            <polygon points="140,232 228,222 232,234 146,246" fill="#74472a"/>
+            <g transform="translate(150 234)">
+              <polygon class="flame" points="-66,0 -50,-44 -34,0" fill="#f07a22"/>
+              <polygon class="flame b" points="-34,0 -12,-60 6,0" fill="#ffb457"/>
+              <polygon class="flame c" points="2,0 24,-50 42,0" fill="#f07a22"/>
+              <polygon class="flame b" points="36,0 52,-38 66,0" fill="#ffd68f"/>
+              <polygon class="flame c" points="-18,0 -4,-30 10,0" fill="#fff1c4"/>
+            </g>
+            <!-- 거품 -->
+            <circle class="bub" cx="120" cy="88" r="4" fill="#ffd68f" style="animation-delay:-.4s"/>
+            <circle class="bub" cx="166" cy="94" r="3" fill="#ffd68f" style="animation-delay:-1.3s"/>
+            <circle class="bub" cx="196" cy="90" r="3.5" fill="#ffd68f" style="animation-delay:-2s"/>
+          </svg>
+        </div>
+        <div class="obj reel">
+          <span class="play"></span>
+          <div class="cap"><b>Dragon Egg Omelette</b>Ordered by @frosty_wolf · cooked tonight</div>
+        </div>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step" data-step="1">
+        <span class="num">01</span>
+        <h2>You <em>comment</em> a dish.</h2>
+        <p>Any dish. Real, made up, slightly cursed. Write it under our newest reel.</p>
+      </div>
+      <div class="step" data-step="2">
+        <span class="num">02</span>
+        <h2>We <em>cook</em> it.</h2>
+        <p>Your comment goes on the ticket rail. The pot goes on the fire. Everything is built by hand in low-poly.</p>
+      </div>
+      <div class="step" data-step="3">
+        <span class="num">03</span>
+        <h2>It is <em>served</em> with your name.</h2>
+        <p>The finished dish gets its own reel, with credit to whoever ordered it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. 주문서 -->
+<section class="wrap" id="order">
+  <div class="orderbox">
+    <div>
+      <span class="kicker">Order desk</span>
+      <h2>What should we cook for you?</h2>
+      <p class="lead">Fill in the ticket, copy it, and paste it as a comment on our newest reel.</p>
+      <form id="of" autocomplete="off">
+        <label>Dish<input id="iDish" maxlength="60" placeholder="dragon egg omelette"></label>
+        <label>Your Instagram name (optional)<input id="iName" maxlength="30" placeholder="your_name"></label>
+        <div class="acts">
+          <button class="btn" type="submit">Copy my order</button>
+          <a class="btn ghost" href="https://www.instagram.com/stewpoly/" target="_blank" rel="noopener">Open Instagram</a>
+        </div>
+        <div class="toast" id="toast" role="status"></div>
+      </form>
+    </div>
+    <div class="rail">
+      <div class="ticket" id="ticket">
+        <span class="clip"></span>
+        <div class="hd"><span>STEWPOLY</span><span id="tNo">No. 0001</span></div>
+        <div class="dish" id="tDish">dragon egg omelette</div>
+        <div class="row"><span>for</span><span id="tName">your_name</span></div>
+        <div class="row"><span>table</span><span>the comments</span></div>
+        <div class="row"><span>date</span><span id="tDate"></span></div>
+        <span class="stamp">ORDER</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. 메뉴 -->
+<section class="menu wrap" id="menu">
+  <span class="kicker">Cooked so far</span>
+  <h2>The Menu</h2>
+  <div class="count" id="count"></div>
   <div class="grid" id="grid"></div>
+</section>
 
-  <section class="order">
-    <h2>How to order</h2>
-    <div class="cmt">
-      <div class="pf">?</div>
-      <div><b>your_name</b>one cheeseburger, please<div class="ex">↑ Comment like this on our latest reel. We cook it for you.</div></div>
-    </div>
-    <p>Name any dish. We will cook it.</p>
-  </section>
-</div>
-
-<div class="forest" aria-hidden="true"></div>
-<div class="groundbar">stewpoly · low-poly fantasy kitchen · <a href="https://www.instagram.com/stewpoly/" target="_blank" rel="noopener" style="color:var(--fire2)">@stewpoly</a></div>
+<div class="foot" aria-hidden="true"></div>
+<div class="groundbar">stewpoly · low-poly fantasy kitchen · <a href="https://www.instagram.com/stewpoly/" target="_blank" rel="noopener">@stewpoly</a></div>
 
 <dialog id="dlg">
   <button class="close" aria-label="Close">×</button>
   <img id="dImg" alt="">
-  <div class="body">
+  <div class="dbody">
     <h3 id="dName"></h3>
     <div class="by" id="dBy"></div>
     <p id="dNote"></p>
@@ -178,49 +361,119 @@
 
 <script src="dishes.js"></script>
 <script>
-  const D=window.DISHES||[], grid=document.getElementById('grid'), dlg=document.getElementById('dlg');
-  const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-  document.getElementById('count').textContent=D.length+(D.length===1?' dish':' dishes')+' on the menu';
+  const calm = matchMedia('(prefers-reduced-motion:reduce)').matches;
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const $ = id => document.getElementById(id);
 
-  D.forEach(d=>{
-    const el=document.createElement('article'); el.className='card';
-    el.innerHTML=`<div class="ph"><img src="${esc(d.image)}" alt="${esc(d.name)}" loading="lazy"></div>
-      <div class="meta"><h3>${esc(d.name)}</h3>
-      <div class="rule"><span>Ordered by</span><span>${esc(d.orderedBy)}</span></div>
+  /* ── 1. 등불: 포인터를 따라가고, 가만히 두면 스스로 흔들린다 ── */
+  const hero = $('hero'), lamp = $('lamp'), hint = $('hint'), cv = $('fx'), cx2 = cv.getContext('2d');
+  let tx = .5, ty = .44, lx = .5, ly = .44, last = -1e9, moved = false, W = 0, H = 0, dpr = 1;
+  function size(){ dpr = Math.min(devicePixelRatio || 1, 2); W = hero.clientWidth; H = hero.clientHeight;
+    cv.width = W * dpr; cv.height = H * dpr; cx2.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  size(); addEventListener('resize', size);
+  function aim(e){ const r = hero.getBoundingClientRect(); tx = (e.clientX - r.left) / r.width; ty = (e.clientY - r.top) / r.height;
+    last = performance.now(); if(!moved){ moved = true; hint.classList.add('gone'); } }
+  hero.addEventListener('pointermove', aim); hero.addEventListener('pointerdown', aim);
+  if (matchMedia('(hover:none)').matches) hint.textContent = 'Touch to move the lantern';
+
+  // 김(부드러운 연기)과 불씨
+  const steam = [], embers = [];
+  function spawnSteam(){ const s = Math.min(W, H * .82, 820);
+    steam.push({x: W/2 + (Math.random() - .5) * s * .22, y: H * .44 - s * .04, r: s * (.04 + Math.random() * .04),
+      vy: -(.25 + Math.random() * .35), ph: Math.random() * 6, life: 0, max: 260 + Math.random() * 140}); }
+  function spawnEmber(){ embers.push({x: Math.random() * W, y: H + 10, vy: -(.4 + Math.random() * .7), dx: (Math.random() - .5) * .4,
+    r: 1 + Math.random() * 2, life: 0, max: 400 + Math.random() * 300}); }
+
+  let t0 = performance.now(), frame = 0;
+  (function loop(now){
+    const t = (now - t0) / 1000;
+    if (now - last > 2600){ tx = .5 + Math.sin(t * .6) * .16; ty = .42 + Math.cos(t * .45) * .1; }
+    lx += (tx - lx) * .09; ly += (ty - ly) * .09;
+    const flick = calm ? 0 : Math.sin(t * 9) * 4 + Math.sin(t * 23) * 3;
+    const base = Math.max(170, Math.min(W, H) * .34);
+    hero.style.setProperty('--mx', (lx * 100) + '%'); hero.style.setProperty('--my', (ly * 100) + '%');
+    hero.style.setProperty('--r', (base + flick) + 'px');
+    lamp.style.transform = `translate(${lx * W}px,${ly * H}px)`;
+
+    if (!calm && hero.getBoundingClientRect().bottom > 0){
+      frame++;
+      if (frame % 9 === 0) spawnSteam();
+      if (frame % 14 === 0) spawnEmber();
+      cx2.clearRect(0, 0, W, H);
+      cx2.globalCompositeOperation = 'lighter';
+      for (let i = steam.length - 1; i >= 0; i--){ const p = steam[i]; p.life++;
+        p.y += p.vy; p.x += Math.sin(p.ph + p.life * .02) * .35; p.r *= 1.004;
+        const k = p.life / p.max, a = Math.sin(Math.PI * k) * .07;
+        // 등불에 가까울수록 김이 밝게 보인다
+        const d = Math.hypot(p.x - lx * W, p.y - ly * H), lit = Math.max(.25, 1 - d / (base * 1.6));
+        const g = cx2.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r);
+        g.addColorStop(0, `rgba(255,236,214,${a * lit})`); g.addColorStop(1, 'rgba(255,236,214,0)');
+        cx2.fillStyle = g; cx2.beginPath(); cx2.arc(p.x, p.y, p.r, 0, 7); cx2.fill();
+        if (p.life > p.max) steam.splice(i, 1); }
+      for (let i = embers.length - 1; i >= 0; i--){ const e = embers[i]; e.life++;
+        e.y += e.vy; e.x += e.dx + Math.sin(e.life * .05) * .3;
+        const a = Math.sin(Math.PI * e.life / e.max) * .9;
+        cx2.fillStyle = `rgba(255,190,110,${a})`; cx2.shadowColor = 'rgba(255,150,60,.9)'; cx2.shadowBlur = 8;
+        cx2.beginPath(); cx2.arc(e.x, e.y, e.r, 0, 7); cx2.fill(); cx2.shadowBlur = 0;
+        if (e.life > e.max || e.y < -10) embers.splice(i, 1); }
+      cx2.globalCompositeOperation = 'source-over';
+    }
+    requestAnimationFrame(loop);
+  })(performance.now());
+
+  /* ── 2. 스크롤 스토리: 화면 가운데에 온 단계로 장면을 바꾼다 ── */
+  const scene = $('scene'), steps = [...document.querySelectorAll('.step')];
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting){ steps.forEach(s => s.classList.toggle('on', s === e.target)); scene.dataset.step = e.target.dataset.step; }
+  }), {rootMargin: matchMedia('(max-width:760px)').matches ? '-66% 0px -22% 0px' : '-45% 0px -45% 0px'});  // 모바일은 장면 아래 글 영역 기준
+  steps.forEach(s => io.observe(s));
+
+  /* ── 3. 주문서 ── */
+  const iDish = $('iDish'), iName = $('iName'), tk = $('ticket');
+  const today = new Date().toISOString().slice(0, 10); $('tDate').textContent = today;
+  const num = s => { let h = 7; for (const c of s) h = (h * 31 + c.charCodeAt(0)) % 9973; return 'No. ' + String(h).padStart(4, '0'); };
+  function render(reprint){
+    const dish = iDish.value.trim() || 'dragon egg omelette', name = iName.value.trim().replace(/^@/, '') || 'your_name';
+    $('tDish').textContent = dish; $('tName').textContent = name; $('tNo').textContent = num(dish.toLowerCase());
+    if (reprint && !calm){ tk.classList.remove('print'); void tk.offsetWidth; tk.classList.add('print'); }
+  }
+  let typing; [iDish, iName].forEach(el => el.addEventListener('input', () => { render(false); clearTimeout(typing); typing = setTimeout(() => render(true), 700); }));
+  render(false);
+  $('of').addEventListener('submit', async e => {
+    e.preventDefault();
+    const dish = iDish.value.trim();
+    if (!dish){ $('toast').textContent = 'Write a dish first.'; iDish.focus(); return; }
+    render(true);
+    const text = `${dish}, please!`;
+    let ok = false;
+    try { await navigator.clipboard.writeText(text); ok = true; } catch (_) {
+      const ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select();
+      try { ok = document.execCommand('copy'); } catch (_) {} ta.remove(); }
+    $('toast').textContent = ok ? `Copied: "${text}" Paste it under our newest reel.` : `Copy this: "${text}"`;
+  });
+
+  /* ── 4. 메뉴 ── */
+  const D = window.DISHES || [], grid = $('grid'), dlg = $('dlg');
+  $('count').textContent = D.length + (D.length === 1 ? ' dish' : ' dishes') + ' cooked so far';
+  const seen = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); seen.unobserve(e.target); } }), {threshold: .15});
+  D.forEach((d, i) => {
+    const el = document.createElement('article'); el.className = 'card'; el.style.transitionDelay = (i % 3) * .08 + 's';
+    el.innerHTML = `<img src="${esc(d.image)}" alt="${esc(d.name)}" loading="lazy"><span class="lit"></span>
+      <div class="m"><h3>${esc(d.name)}</h3><div class="by">Ordered by ${esc(d.orderedBy)}</div>
       <div class="ing">${d.ingredients.map(esc).join(' · ')}</div></div>`;
-    el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect();
-      el.style.setProperty('--x',(e.clientX-r.left)+'px');el.style.setProperty('--y',(e.clientY-r.top)+'px')});
-    el.onclick=()=>{
-      dImg.src=d.image; dImg.alt=d.name; dName.textContent=d.name; dBy.textContent=d.orderedBy+' · '+d.date;
-      dNote.textContent=d.note; dTags.innerHTML=d.ingredients.map(t=>`<span>${esc(t)}</span>`).join('');
+    el.addEventListener('pointermove', e => { const r = el.getBoundingClientRect();
+      el.style.setProperty('--x', (e.clientX - r.left) + 'px'); el.style.setProperty('--y', (e.clientY - r.top) + 'px'); });
+    el.onclick = () => {
+      dImg.src = d.image; dImg.alt = d.name; dName.textContent = d.name; dBy.textContent = d.orderedBy + ' · ' + d.date;
+      dNote.textContent = d.note; dTags.innerHTML = d.ingredients.map(t => `<span>${esc(t)}</span>`).join('');
       dlg.showModal();
     };
-    grid.appendChild(el);
+    grid.appendChild(el); seen.observe(el);
   });
-  const soon=document.createElement('div'); soon.className='soon'; soon.textContent='The next order is simmering…'; grid.appendChild(soon);
-  dlg.addEventListener('click',e=>{if(e.target===dlg||e.target.classList.contains('close'))dlg.close()});
-
-  // 불씨
-  const em=document.getElementById('embers');
-  for(let i=0;i<14;i++){const s=document.createElement('i');
-    s.style.left=(8+Math.random()*84)+'%';s.style.setProperty('--dx',(Math.random()*80-40)+'px');
-    s.style.animationDuration=(7+Math.random()*7)+'s';s.style.animationDelay=(-Math.random()*12)+'s';
-    s.style.width=s.style.height=(2+Math.random()*3)+'px';em.appendChild(s)}
-
-  // 등불: 손가락·마우스를 따라 움직이고, 가만히 두면 스스로 흔들린다
-  const st=document.getElementById('stage'), calm=matchMedia('(prefers-reduced-motion:reduce)').matches;
-  let tx=50,ty=45,cx=50,cy=45,last=0,t0=performance.now();
-  function aim(e){const r=st.getBoundingClientRect();
-    tx=(e.clientX-r.left)/r.width*100;ty=(e.clientY-r.top)/r.height*100;last=performance.now()}
-  st.addEventListener('pointermove',aim);st.addEventListener('pointerdown',aim);
-  (function loop(now){
-    const t=(now-t0)/1000;
-    if(now-last>2500){tx=50+Math.sin(t*.7)*16;ty=45+Math.cos(t*.5)*10}
-    cx+=(tx-cx)*.08;cy+=(ty-cy)*.08;
-    const flick=calm?0:Math.sin(t*9)*3+Math.sin(t*23)*2;
-    st.style.setProperty('--mx',cx+'%');st.style.setProperty('--my',cy+'%');
-    st.style.setProperty('--r',(st.clientWidth*.40+flick)+'px');
-    requestAnimationFrame(loop)})(performance.now());
+  const nx = document.createElement('a'); nx.className = 'next'; nx.href = '#order';
+  nx.innerHTML = '<span class="big">Your dish goes here</span><span>The next order is simmering. Write yours.</span>';
+  grid.appendChild(nx);
+  dlg.addEventListener('click', e => { if (e.target === dlg || e.target.classList.contains('close')) dlg.close(); });
 </script>
 </body>
 </html>
