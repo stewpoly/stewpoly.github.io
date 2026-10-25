@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>stewpoly — All dishes</title>
+<meta name="description" content="Low-poly fantasy cooking & cozy worlds. Your orders, cooked for adventurers.">
+<meta property="og:title" content="stewpoly — All dishes">
+<meta property="og:description" content="Low-poly fantasy cooking & cozy worlds. Your orders, cooked for adventurers.">
+<meta property="og:image" content="img/og.jpg">
+<meta name="theme-color" content="#1b1226">
+<link rel="icon" href="img/avatar.jpg">
+<style>
+  :root{--bg:#1b1226;--bg2:#2a1a36;--ink:#f6e9da;--dim:#b9a6c9;--lamp:#f2a45f;--card:#241731;--line:#3b2850}
+  *{box-sizing:border-box;margin:0}
+  html{background:var(--bg)}
+  body{min-height:100vh;color:var(--ink);font:17px/1.6 Georgia,"Times New Roman",serif;
+    background:radial-gradient(900px 520px at 50% -80px,#4a2c3c 0%,rgba(74,44,60,0) 70%),var(--bg);
+    -webkit-font-smoothing:antialiased}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.07;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px 80px;position:relative}
+  header{text-align:center;padding:64px 0 40px}
+  .avatar{width:112px;height:112px;border-radius:50%;object-fit:cover;border:2px solid var(--lamp);
+    box-shadow:0 0 36px rgba(242,164,95,.35)}
+  h1{font-size:2.3rem;letter-spacing:.04em;margin-top:18px;font-weight:700}
+  .bio{color:var(--dim);margin-top:10px;max-width:30em;margin-inline:auto}
+  .bio b{color:var(--ink);font-weight:400}
+  .cta{display:inline-block;margin-top:20px;padding:9px 20px;border:1px solid var(--lamp);color:var(--lamp);
+    border-radius:99px;font-size:.95rem;text-decoration:none}
+  h2{font-size:1.05rem;font-weight:400;color:var(--dim);letter-spacing:.14em;text-transform:uppercase;
+    margin:24px 0 20px;display:flex;align-items:center;gap:12px}
+  h2::after{content:"";flex:1;height:1px;background:var(--line)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+    transition:transform .25s,box-shadow .25s;cursor:pointer}
+  .card:hover{transform:translateY(-4px);box-shadow:0 14px 40px rgba(0,0,0,.45),0 0 30px rgba(242,164,95,.12)}
+  .card img{display:block;width:100%;aspect-ratio:1;object-fit:cover}
+  .meta{padding:14px 16px 18px}
+  .meta h3{font-size:1.1rem}
+  .by{color:var(--lamp);font-size:.85rem;margin-top:2px}
+  .soon{display:flex;align-items:center;justify-content:center;text-align:center;min-height:120px;
+    border:1px dashed var(--line);border-radius:14px;color:var(--dim);padding:24px;font-style:italic}
+  dialog{border:1px solid var(--line);border-radius:16px;background:var(--card);color:var(--ink);
+    max-width:min(92vw,520px);width:100%;padding:0;overflow:hidden}
+  dialog::backdrop{background:rgba(10,5,18,.8)}
+  dialog img{display:block;width:100%}
+  .body{padding:18px 22px 24px}
+  .body p{color:var(--dim);margin-top:6px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .tags span{font-size:.82rem;padding:3px 11px;border:1px solid var(--line);border-radius:99px;color:var(--ink)}
+  .close{position:absolute;top:10px;right:12px;background:rgba(20,10,30,.7);color:var(--ink);border:0;
+    width:34px;height:34px;border-radius:50%;font-size:1.2rem;cursor:pointer}
+  footer{text-align:center;color:var(--dim);font-size:.85rem;margin-top:64px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img class="avatar" src="img/avatar.jpg" alt="stewpoly stew bowl">
+    <h1>stewpoly</h1>
+    <p class="bio">Low-poly fantasy cooking &amp; cozy worlds.<br><b>Your orders, cooked for adventurers.</b></p>
+    <a class="cta" href="#dishes">🍲 All dishes ↓</a>
+  </header>
+
+  <h2 id="dishes">All dishes <span id="count"></span></h2>
+  <div class="grid" id="grid"></div>
+
+  <footer>Order in the comments on Instagram — your dish might be next.</footer>
+</div>
+
+<dialog id="dlg">
+  <button class="close" aria-label="Close">×</button>
+  <img id="dImg" alt="">
+  <div class="body">
+    <h3 id="dName"></h3>
+    <div class="by" id="dBy"></div>
+    <p id="dNote"></p>
+    <div class="tags" id="dTags"></div>
+  </div>
+</dialog>
+
+<script src="dishes.js"></script>
+<script>
+  const grid=document.getElementById('grid'), dlg=document.getElementById('dlg');
+  const D=window.DISHES||[];
+  document.getElementById('count').textContent='· '+D.length;
+  const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  D.forEach((d,i)=>{
+    const el=document.createElement('article'); el.className='card';
+    el.innerHTML=`<img src="${esc(d.image)}" alt="${esc(d.name)}" loading="lazy"><div class="meta"><h3>${esc(d.name)}</h3><div class="by">${esc(d.orderedBy)}</div></div>`;
+    el.onclick=()=>{
+      dImg.src=d.image; dImg.alt=d.name; dName.textContent=d.name; dBy.textContent=d.orderedBy+' · '+d.date;
+      dNote.textContent=d.note; dTags.innerHTML=d.ingredients.map(t=>`<span>${esc(t)}</span>`).join('');
+      dlg.showModal();
+    };
+    grid.appendChild(el);
+  });
+  const soon=document.createElement('div'); soon.className='soon'; soon.textContent='The next order is simmering…'; grid.appendChild(soon);
+  dlg.addEventListener('click',e=>{if(e.target===dlg||e.target.classList.contains('close'))dlg.close()});
+</script>
+</body>
+</html>
