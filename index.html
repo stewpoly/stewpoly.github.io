@@ -33,7 +33,7 @@
     background:url(img/paper.png) 0 0/256px 256px}
   .wash{position:absolute;pointer-events:none;z-index:-1;background:center/contain no-repeat}
   /* 번짐 필터를 건 바탕은 자기 층으로 올려 한 번만 그리게 한다 */
-  .btn::before,.cmt::before,.tk::before,.ticket::before,.reel::before,.reel::after,.card::before,.card .ph,.next::before{
+  .btn::before,.cmt::before,.tk::before,.ticket::before,.reel::before,.reel::after,.card::before,.card .ph,.next::before,.rt::before,.book::before{
     transform:translateZ(0);backface-visibility:hidden}
 
   .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 26px;border-radius:99px;font-size:1.02rem;font-weight:600;
@@ -164,12 +164,60 @@
   .ticket .stamp{position:absolute;right:20px;bottom:22px;padding:4px 10px;border:3px solid var(--sauce);border-radius:8px;color:var(--sauce);
     font:700 .85rem var(--head);letter-spacing:.12em;transform:rotate(-12deg);opacity:.85}
 
+  /* ── 주문 레일: 최신 릴스에서 좋아요 많은 주문 ── */
+  .railsec{margin-top:14svh;text-align:center;position:relative;isolation:isolate}
+  .railsec .wash{width:760px;height:760px;left:50%;top:-80px;margin-left:-380px;background-image:url(img/wash_fire.png)}
+  .railsec h2,.ledger h2{font-size:clamp(2rem,5vw,2.8rem);font-weight:600;margin-top:8px;line-height:1.1}
+  .railsec .lead,.ledger .lead{color:var(--dim);font-weight:600;margin:10px auto 0;max-width:34em}
+  .railbar{max-width:1000px;height:8px;margin:40px auto 0;border-radius:4px;background:linear-gradient(#8a7a9e,#4b3d60);box-shadow:0 3px 0 #21162f}
+  .tickets{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;justify-content:safe center;padding:0 16px 34px;margin-top:-2px;
+    scrollbar-width:none}
+  .tickets::-webkit-scrollbar{display:none}
+  .rt{flex:none;width:210px;scroll-snap-align:center;position:relative;isolation:isolate;padding:30px 16px 30px;text-align:left;
+    color:#3a2a20;font:400 .9rem/1.4 var(--mono);transform:rotate(var(--rot,0deg));transform-origin:50% 0;
+    -webkit-mask:radial-gradient(circle 6px at 50% 100%,transparent 98%,#000) 0 0/14px 100% repeat-x;
+            mask:radial-gradient(circle 6px at 50% 100%,transparent 98%,#000) 0 0/14px 100% repeat-x}
+  .rt::before{content:"";position:absolute;inset:0;z-index:-1;filter:url(#wc);background:var(--paper);
+    box-shadow:inset 0 0 22px rgba(150,110,70,.35)}
+  .rt .clip{position:absolute;top:0;left:50%;width:30px;height:14px;margin-left:-15px;border-radius:0 0 6px 6px;background:#9c8bb2}
+  .rt .rank{font:700 1.5rem/1 var(--head);color:var(--sauce)}
+  .rt .txt{margin-top:8px;font:700 1.02rem/1.35 var(--mono);color:#2b160a;word-break:break-word}
+  .rt .who{margin-top:12px;color:#6d5848;border-top:1px dashed #a08a70;padding-top:8px;display:flex;justify-content:space-between;gap:8px}
+  .rt .who span{overflow:hidden;text-overflow:ellipsis}
+  .rt .who b{color:#c0392b;font-weight:700;white-space:nowrap}
+  .rt.empty{width:260px;text-align:center}
+  .rt.empty .txt{font-size:1.1rem}
+  .railsec .btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:6px}
+  .upd{margin-top:14px;color:rgba(203,185,214,.6);font-size:.8rem;font-weight:600}
+
+  /* ── 단골 장부 ── */
+  .ledger{margin-top:16svh;text-align:center;position:relative;isolation:isolate}
+  .ledger .wash{width:800px;height:800px;left:50%;top:60px;margin-left:-400px;background-image:url(img/wash_sauce.png)}
+  .find{max-width:420px;margin:24px auto 0;text-align:left}
+  .found{max-width:520px;margin:14px auto 0;min-height:1.4em;font-weight:600;color:var(--dim)}
+  .found b,.found a{color:var(--fire2)}
+  .book{position:relative;isolation:isolate;max-width:880px;margin:30px auto 0;padding:38px 40px 44px;text-align:left;color:#3a2a20}
+  .book::before{content:"";position:absolute;inset:0;z-index:-1;filter:url(#wc);
+    background:repeating-linear-gradient(180deg,transparent 0 33px,rgba(120,90,60,.2) 33px 34px) 0 72px/100% 100% no-repeat,var(--paper);
+    box-shadow:inset 0 0 50px rgba(150,110,70,.4),0 30px 60px rgba(0,0,0,.5)}
+  .book h3{font:600 1.3rem var(--head);color:#2b160a;text-align:center;border-bottom:2px solid rgba(120,90,60,.35);padding-bottom:10px;margin-bottom:12px}
+  .names{columns:3 200px;column-gap:34px;font:600 .98rem/34px var(--body)}
+  .gn{break-inside:avoid;display:flex;justify-content:space-between;align-items:baseline;gap:8px;white-space:nowrap}
+  .gn span:first-child{overflow:hidden;text-overflow:ellipsis}
+  .gn i{font-style:normal;font-size:.72rem;color:#8a6d55;font-weight:700;letter-spacing:.04em}
+  .gn.served span:first-child{color:var(--sauce)}
+  .gn.hit{background:rgba(255,180,87,.4);border-radius:6px}
+  .book .empty{text-align:center;font:400 1.05rem var(--mono);color:#6d5848;padding:20px 0}
+  .more{text-align:center;color:#6d5848;font:400 .9rem var(--mono);margin-top:10px}
+  .legend{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px;margin-top:18px;color:var(--dim);font-size:.85rem;font-weight:600}
+  .legend b{color:var(--fire2)}
+
   /* ── 4. 메뉴 ── */
   .menu{margin-top:16svh;text-align:center}
   .menu h2{font-size:clamp(2rem,5vw,2.8rem);font-weight:600;margin-top:8px}
   .menu .count{color:var(--dim);font-weight:600;margin-top:4px}
   .grid{margin-top:34px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,300px));gap:26px;justify-content:center;text-align:left}
-  .card{position:relative;isolation:isolate;border-radius:22px;cursor:pointer;opacity:0;transform:translateY(30px);
+  .card{display:block;color:inherit;text-decoration:none;position:relative;isolation:isolate;border-radius:22px;cursor:pointer;opacity:0;transform:translateY(30px);
     transition:opacity .7s,transform .7s cubic-bezier(.2,.8,.2,1)}
   .card::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:22px;filter:url(#wc);background:var(--plum);
     box-shadow:0 0 0 2px rgba(255,214,143,.18),0 24px 50px rgba(0,0,0,.45),inset 0 0 30px rgba(10,6,18,.45);transition:box-shadow .3s}
@@ -204,19 +252,6 @@
     background:radial-gradient(ellipse at 50% 100%,rgba(184,133,255,.18),transparent 70%)}
   .groundbar{background:#0b0712;color:var(--dim);text-align:center;font-size:.86rem;padding:14px 16px 22px;font-weight:600}
   .groundbar a{color:var(--fire2)}
-
-  /* ── 상세 팝업 ── */
-  dialog{border:0;border-radius:22px;background:var(--plum);color:var(--ink);max-width:min(92vw,520px);width:100%;padding:0;overflow:visible;
-    box-shadow:0 0 0 2px rgba(255,214,143,.4),0 0 80px rgba(255,170,80,.25),0 20px 60px rgba(0,0,0,.7)}
-  dialog::backdrop{background:rgba(10,6,18,.85)}
-  dialog img{display:block;width:100%;border-radius:22px 22px 0 0}
-  .dbody{padding:16px 20px 22px;text-align:center}
-  .dbody h3{font-size:1.4rem;font-weight:600}.dbody .by{color:var(--fire2);font-size:.9rem;font-weight:700}
-  .dbody p{color:var(--dim);margin-top:8px}
-  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;justify-content:center}
-  .tags span{font-size:.82rem;padding:3px 12px;border:2px solid rgba(255,214,143,.45);border-radius:99px;font-weight:600}
-  .close{position:absolute;top:-14px;right:-10px;background:var(--fire2);color:#2b160a;border:0;width:38px;height:38px;border-radius:50%;
-    font:700 1.1rem var(--head);cursor:pointer;box-shadow:0 4px 0 #8a5522}
 
   /* ── 좁은 화면 ── */
   @media (max-width:760px){
@@ -344,10 +379,25 @@
       <div class="step" data-step="3">
         <span class="num">03</span>
         <h2>It is <em>served</em> with your name.</h2>
-        <p>The finished dish gets its own reel, with credit to whoever ordered it.</p>
+        <p>The finished dish gets its own reel and its own page, plus a card made for whoever ordered it.</p>
       </div>
     </div>
   </div>
+</section>
+
+<!-- 주문 레일 -->
+<section class="railsec wrap" id="rail">
+  <div class="wash"></div>
+  <span class="kicker">On the rail</span>
+  <h2>Orders waiting for the pot</h2>
+  <p class="lead">The most-liked dish comments on our newest reel. Like the one you want to see cooked next.</p>
+  <div class="railbar"></div>
+  <div class="tickets" id="tickets"></div>
+  <div class="btns">
+    <a class="btn" id="railLike" href="https://www.instagram.com/stewpoly/" target="_blank" rel="noopener">Vote with a like</a>
+    <a class="btn ghost" href="#order">Add my order</a>
+  </div>
+  <div class="upd" id="railUpd"></div>
 </section>
 
 <!-- 3. 주문서 -->
@@ -357,7 +407,7 @@
     <div>
       <span class="kicker">Order desk</span>
       <h2>What should we cook for you?</h2>
-      <p class="lead">Fill in the ticket, copy it, and paste it as a comment on our newest reel.</p>
+      <p class="lead">Fill in the ticket, copy it, and paste it as a comment on our newest reel. Every order puts your name in <a href="#ledger" style="color:var(--fire2)">the Regulars' Ledger</a>.</p>
       <form id="of" autocomplete="off">
         <label>Dish<input id="iDish" maxlength="60" placeholder="dragon egg omelette"></label>
         <label>Your Instagram name (optional)<input id="iName" maxlength="30" placeholder="your_name"></label>
@@ -391,21 +441,28 @@
   <div class="grid" id="grid"></div>
 </section>
 
+<!-- 단골 장부 -->
+<section class="ledger wrap" id="ledger">
+  <div class="wash"></div>
+  <span class="kicker">The Regulars' Ledger</span>
+  <h2>Everyone who ever ordered</h2>
+  <p class="lead">Comment a dish once and your name is written here for good. Order on more reels to earn a title.</p>
+  <label class="find">Find your name<input id="iFind" maxlength="30" placeholder="@your_name" autocomplete="off"></label>
+  <div class="found" id="found" role="status"></div>
+  <div class="book">
+    <h3 id="guestCount">Guests of the house</h3>
+    <div class="names" id="names"></div>
+    <div class="more" id="more"></div>
+  </div>
+  <div class="legend"><span><b>Wanderer</b> ordered on 1 reel</span><span><b>Regular</b> 3+ reels</span><span><b>Guild Chef</b> 7+ reels</span><span><b>★ Honored Guest</b> your dish was cooked</span></div>
+</section>
+
 <div class="foot" aria-hidden="true"></div>
 <div class="groundbar">stewpoly · low-poly fantasy kitchen · <a href="https://www.instagram.com/stewpoly/" target="_blank" rel="noopener">@stewpoly</a></div>
 
-<dialog id="dlg">
-  <button class="close" aria-label="Close">×</button>
-  <img id="dImg" alt="">
-  <div class="dbody">
-    <h3 id="dName"></h3>
-    <div class="by" id="dBy"></div>
-    <p id="dNote"></p>
-    <div class="tags" id="dTags"></div>
-  </div>
-</dialog>
-
 <script src="dishes.js"></script>
+<script src="rail.js"></script>
+<script src="ledger.js"></script>
 <script>
   const calm = matchMedia('(prefers-reduced-motion:reduce)').matches;
   const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -505,27 +562,62 @@
   });
 
   /* ── 4. 메뉴 ── */
-  const D = window.DISHES || [], grid = $('grid'), dlg = $('dlg');
+  const D = window.DISHES || [], grid = $('grid');
   $('count').textContent = D.length + (D.length === 1 ? ' dish' : ' dishes') + ' cooked so far';
   const seen = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); seen.unobserve(e.target); } }), {threshold: .15});
   D.forEach((d, i) => {
-    const el = document.createElement('article'); el.className = 'card'; el.style.transitionDelay = (i % 3) * .08 + 's';
+    // 카드를 누르면 요리 전용 페이지(d/<slug>/)로 간다
+    const el = document.createElement('a'); el.className = 'card'; el.href = `d/${encodeURIComponent(d.slug)}/`;
+    el.style.transitionDelay = (i % 3) * .08 + 's';
     el.innerHTML = `<div class="ph"><img src="${esc(d.image)}" alt="${esc(d.name)}" loading="lazy"></div><span class="lit"></span>
-      <div class="m"><h3>${esc(d.name)}</h3><div class="by">Ordered by ${esc(d.orderedBy)}</div>
+      <div class="m"><h3>${esc(d.name)}</h3><div class="by">Ordered by ${esc(d.by)}</div>
       <div class="ing">${d.ingredients.map(esc).join(' · ')}</div></div>`;
     el.addEventListener('pointermove', e => { const r = el.getBoundingClientRect();
       el.style.setProperty('--x', (e.clientX - r.left) + 'px'); el.style.setProperty('--y', (e.clientY - r.top) + 'px'); });
-    el.onclick = () => {
-      dImg.src = d.image; dImg.alt = d.name; dName.textContent = d.name; dBy.textContent = d.orderedBy + ' · ' + d.date;
-      dNote.textContent = d.note; dTags.innerHTML = d.ingredients.map(t => `<span>${esc(t)}</span>`).join('');
-      dlg.showModal();
-    };
     grid.appendChild(el); seen.observe(el);
   });
   const nx = document.createElement('a'); nx.className = 'next'; nx.href = '#order';
   nx.innerHTML = '<span class="big">Your dish goes here</span><span>The next order is simmering. Write yours.</span>';
   grid.appendChild(nx);
-  dlg.addEventListener('click', e => { if (e.target === dlg || e.target.classList.contains('close')) dlg.close(); });
+
+  /* ── 주문 레일 ── */
+  const R = window.RAIL || {orders: []}, tks = $('tickets');
+  const IG = 'https://www.instagram.com/stewpoly/';
+  $('railLike').href = R.reel || IG;
+  if (!R.orders.length){
+    tks.innerHTML = `<div class="rt empty" style="--rot:-1.5deg"><span class="clip"></span><div class="rank">#1</div>
+      <div class="txt">Your order could hang here.</div><div class="who"><span>Comment on our newest reel</span></div></div>`;
+  } else {
+    tks.innerHTML = R.orders.map((o, i) => `<div class="rt" style="--rot:${(i % 2 ? 1 : -1) * (1 + (i % 3) * .6)}deg"><span class="clip"></span>
+      <div class="rank">#${i + 1}</div><div class="txt">${esc(o.text)}</div>
+      <div class="who"><span>@${esc(o.username)}</span><b>♥ ${o.likes}</b></div></div>`).join('');
+  }
+  if (R.updated) $('railUpd').textContent = 'Rail updated ' + R.updated + ' KST';
+
+  /* ── 단골 장부 ── */
+  const L = (window.LEDGER || {guests: []}).guests, names = $('names'), SHOW = 60;  // 나머지는 이름 찾기로
+  // 칭호는 댓글을 단 릴스 수(visits)로 매긴다
+  const title = g => g.served.length ? 'Honored Guest' : g.visits >= 7 ? 'Guild Chef' : g.visits >= 3 ? 'Regular' : 'Wanderer';
+  if (!L.length){
+    names.outerHTML = '<div class="empty">The ledger is open.<br>The first name could be yours.</div>';
+  } else {
+    names.innerHTML = L.slice(0, SHOW).map(g => `<div class="gn${g.served.length ? ' served' : ''}" data-n="${esc(g.name.toLowerCase())}">
+      <span>${g.served.length ? '★ ' : ''}${esc(g.name)}</span><i>${title(g)}</i></div>`).join('');
+    if (L.length > SHOW) $('more').textContent = `…and ${L.length - SHOW} more names. Use “Find your name” above.`;
+  }
+  if (L.length) $('guestCount').textContent = `${L.length} ${L.length === 1 ? 'name' : 'names'} in the ledger`;
+  let findT;
+  $('iFind').addEventListener('input', e => { clearTimeout(findT); findT = setTimeout(() => {
+    const q = e.target.value.trim().replace(/^@/, '').toLowerCase(), out = $('found');
+    document.querySelectorAll('.gn.hit').forEach(n => n.classList.remove('hit'));
+    if (!q){ out.textContent = ''; return; }
+    const g = L.find(x => x.name.toLowerCase() === q) || L.find(x => x.name.toLowerCase().includes(q));
+    if (!g){ out.innerHTML = 'Not in the ledger yet. <a href="#order">Comment a dish</a> and your name gets written here.'; return; }
+    const served = g.served.map(s => `<a href="d/${encodeURIComponent(s.slug)}/">${esc(s.name)}</a>`).join(', ');
+    out.innerHTML = `<b>@${esc(g.name)}</b> · ${title(g)} · ordered on ${g.visits} ${g.visits === 1 ? 'reel' : 'reels'}` + (served ? `<br>Cooked for you: ${served}` : '');
+    const n = names.querySelector(`[data-n="${CSS.escape(g.name.toLowerCase())}"]`);
+    if (n) n.classList.add('hit');  // 목록에 보이는 이름이면 형광펜만(검색 결과 문장이 화면에서 밀려나지 않게 스크롤은 안 함)
+  }, 180); });
 </script>
 </body>
 </html>

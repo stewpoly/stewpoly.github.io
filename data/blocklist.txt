@@ -1,0 +1,9 @@
+# 레일에 올리지 않을 댓글 단어(소문자, 한 줄에 하나). 포함되면 그 댓글은 레일에서 빠진다(장부 이름은 남음).
+sex
+nude
+porn
+kill yourself
+kys
+nigg
+fag
+retard

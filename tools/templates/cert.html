@@ -1,0 +1,56 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- 주문 완료 증서(스토리 크기 1080×1920). build_site.py가 $$name 같은 자리를 채워 tools/_cert_tmp.html로 쓰고 찍는다 -->
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0}
+  html,body{width:1080px;height:1920px;overflow:hidden}
+  body{position:relative;background:#140d20;color:#fff1dc;font-family:"Nunito",sans-serif}
+  .bg{position:absolute;inset:0;background:radial-gradient(900px 900px at 50% 38%,rgba(255,170,90,.28),rgba(20,13,32,0) 70%)}
+  .wash{position:absolute;width:1300px;height:1300px;left:-110px;top:180px;background:url(../img/wash_fire.png) center/contain no-repeat;opacity:.9}
+  .wash.g{width:900px;height:900px;left:420px;top:1150px;background-image:url(../img/wash_herb.png)}
+  .grain{position:absolute;inset:0;background:url(../img/paper.png) 0 0/256px;opacity:.35}
+  .top{position:absolute;top:120px;left:0;right:0;text-align:center}
+  .brand{font:700 92px/1 "Fredoka";color:#ffd68f;text-shadow:0 6px 0 #7a4519,0 12px 0 #2b160a,0 0 60px rgba(255,170,80,.45)}
+  .sub{margin-top:22px;font:700 30px "Nunito";letter-spacing:.3em;color:#cbb9d6;text-transform:uppercase}
+  .card{position:absolute;left:110px;right:110px;top:360px;padding:40px 44px 54px;isolation:isolate;color:#3a2a20}
+  .card::before{content:"";position:absolute;inset:0;z-index:-1;background:#f6ead2;filter:url(#wc);
+    box-shadow:inset 0 0 60px rgba(150,110,70,.4),0 40px 80px rgba(0,0,0,.55)}
+  .hd{display:flex;justify-content:space-between;font:700 30px "Courier Prime";border-bottom:4px dashed #a08a70;padding-bottom:18px}
+  .ph{margin-top:34px;aspect-ratio:1;background:url(../$image) center/cover;filter:url(#wcs);border-radius:10px}
+  .dish{margin-top:34px;font:700 64px/1.1 "Fredoka";color:#2b160a;text-align:center}
+  .row{display:flex;gap:12px;margin-top:22px;font:400 34px "Courier Prime";color:#6d5848}
+  .row::after{content:"";order:2;flex:1;border-bottom:4px dotted #b8a284;transform:translateY(-10px)}
+  .row span:first-child{order:1}.row span:last-child{order:3;color:#2b160a;font-weight:700}
+  .stamp{position:absolute;right:40px;bottom:-62px;padding:10px 26px;border:7px solid #d2541a;border-radius:16px;color:#d2541a;background:rgba(246,234,210,.85);
+    font:700 46px "Fredoka";letter-spacing:.14em;transform:rotate(-10deg)}
+  .foot{position:absolute;bottom:110px;left:0;right:0;text-align:center;font:700 34px "Nunito";color:#cbb9d6}
+  .foot b{color:#ffd68f}
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <filter id="wc" x="-6%" y="-6%" width="112%" height="112%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="4" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="16" xChannelSelector="R" yChannelSelector="G" result="d"/>
+    <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="2" seed="9" result="g"/>
+    <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 1.25" result="ga"/>
+    <feComposite in="d" in2="ga" operator="arithmetic" k1="0.18" k2="0.82" k3="0" k4="0"/>
+  </filter>
+  <filter id="wcs" x="-3%" y="-3%" width="106%" height="106%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="2" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="12" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+<div class="bg"></div><div class="wash"></div><div class="wash g"></div>
+<div class="top"><div class="brand">stewpoly</div><div class="sub">Order served</div></div>
+<div class="card">
+  <div class="hd"><span>STEWPOLY</span><span>$number</span></div>
+  <div class="ph"></div>
+  <div class="dish">$name</div>
+  <div class="row"><span>ordered by</span><span>$by</span></div>
+  <div class="row"><span>served</span><span>$date</span></div>
+  <span class="stamp">SERVED</span>
+</div>
+<div class="foot">Comment a dish. We cook it.<br><b>stewpoly.github.io</b></div>
+<div class="grain"></div>
+</body></html>
