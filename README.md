@@ -43,4 +43,4 @@ py -3 tools/update_comments.py --add https://www.instagram.com/reel/XXXX/ --push
 - 칭호: 댓글 단 **릴스 수** 기준 Wanderer 1 · Regular 3+ · Guild Chef 7+ · 요리가 만들어지면 ★ Honored Guest (한 릴스에 몰아 쓴 도배는 1회로 셈)
 - 프로필 사진은 쓰지 않고 아이디만 공개한다. 본인이 빼 달라면 hide.txt에 넣는다
 - stewpoly 자신의 댓글은 세지 않는다
-- 매일 자동 갱신 예약은 아직 없음(첫 릴스 이후 작업 스케줄러에 걸 예정, 정비 담당)
+- **자동 갱신(2026-10-26~)**: 작업 스케줄러 `usagi_perk_sites`가 매일 07·12·17·22시에 `도구/특전사이트갱신.py`를 AI 없이 돌린다 — 새 릴스를 API로 찾아 reels.txt에 넣고 댓글 받기·빌드·푸시까지. 실패 시 폰 알림, 기록 `웹/logs/perk_sites.log`. 평소엔 손으로 돌릴 필요 없음(요리 완성 등록만 손으로)
