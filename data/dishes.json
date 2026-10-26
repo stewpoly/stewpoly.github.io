@@ -1,13 +1,35 @@
 [
-  {
-    "slug": "dungeon-house-stew",
-    "name": "Dungeon House Stew",
-    "note": "The very first pot. Slow-simmered, steam still rising.",
-    "ingredients": ["ember broth", "cave-root carrots", "stone-fruit potatoes", "bog herbs"],
-    "orderedBy": "House special",
-    "requester": "",
-    "date": "2026-10-25",
-    "image": "img/stew.jpg",
-    "reel": ""
-  }
+ {
+  "slug": "mandrake-stew",
+  "name": "Mandrake Stew",
+  "note": "One mandrake, extra carrots. He sulked a little, then settled in for a warm soak.",
+  "ingredients": [
+   "sleepy mandrake",
+   "carrots (extra)",
+   "potatoes",
+   "onion",
+   "garden herbs"
+  ],
+  "orderedBy": "A hooded traveler",
+  "requester": "",
+  "date": "2026-10-26",
+  "image": "img/mandrake-stew.jpg",
+  "reel": ""
+ },
+ {
+  "slug": "dungeon-house-stew",
+  "name": "Dungeon House Stew",
+  "note": "The very first pot. Slow-simmered, steam still rising.",
+  "ingredients": [
+   "ember broth",
+   "cave-root carrots",
+   "stone-fruit potatoes",
+   "bog herbs"
+  ],
+  "orderedBy": "House special",
+  "requester": "",
+  "date": "2026-10-25",
+  "image": "img/stew.jpg",
+  "reel": ""
+ }
 ]
