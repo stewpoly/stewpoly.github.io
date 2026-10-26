@@ -47,7 +47,7 @@
   /* ── 1. 히어로: 화면 전체가 어둡고, 등불이 스튜를 비춘다 ── */
   .hero{position:relative;height:100svh;min-height:560px;overflow:hidden;background:var(--night);touch-action:pan-y;cursor:none}
   .hero .dish{position:absolute;left:50%;top:44%;width:min(96vw,82svh,820px);aspect-ratio:1;transform:translate(-50%,-50%);
-    background:url(img/stew.jpg) center/cover;
+    background:url(img/hero_hut.jpg) center/cover;
     -webkit-mask-image:radial-gradient(circle at 50% 50%,#000 46%,transparent 71%);mask-image:radial-gradient(circle at 50% 50%,#000 46%,transparent 71%)}
   .hero .dark{position:absolute;inset:0;pointer-events:none;
     background:radial-gradient(circle var(--r,260px) at var(--mx,50%) var(--my,44%),
@@ -290,7 +290,7 @@
 
 <!-- 1. 히어로 -->
 <header class="hero" id="hero">
-  <div class="dish" role="img" aria-label="A bowl of low-poly fantasy stew lit by a single lantern"></div>
+  <div class="dish" role="img" aria-label="A low-poly hut kitchen glowing on a hilltop at dusk"></div>
   <div class="dark"></div>
   <div class="warm"></div>
   <canvas id="fx" aria-hidden="true"></canvas>
