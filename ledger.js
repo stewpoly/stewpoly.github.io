@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-10-26 22:09",
+ "updated": "2026-10-26 22:17",
  "guests": [
   {
    "name": "naarak.msin",
@@ -60,6 +60,18 @@ window.LEDGER = {
    "name": "luna.the.fox.uwu",
    "visits": 1,
    "first": "2026-10-26 21:59",
+   "served": []
+  },
+  {
+   "name": "the.cyber.cypher",
+   "visits": 1,
+   "first": "2026-10-26 22:10",
+   "served": []
+  },
+  {
+   "name": "polymercreek",
+   "visits": 1,
+   "first": "2026-10-26 22:17",
    "served": []
   }
  ]
