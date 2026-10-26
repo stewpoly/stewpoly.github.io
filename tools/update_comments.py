@@ -11,6 +11,7 @@
 """
 import argparse
 import json
+import os
 import re
 import subprocess
 import sys
@@ -123,12 +124,16 @@ def main():
     build_site.main()
 
     if a.push:
-        git = lambda *args: subprocess.run(["git", "-C", str(ROOT), *args], capture_output=True, text=True, encoding="utf-8")
+        git = lambda *args: subprocess.run(["git", "-C", str(ROOT), *args], capture_output=True, text=True, encoding="utf-8",
+                                         errors="replace", env={**os.environ, "GCM_INTERACTIVE": "never", "GIT_TERMINAL_PROMPT": "0"})
         git("add", "data", "dishes.js", "ledger.js", "rail.js", "d", "img/cert")
         if git("diff", "--cached", "--quiet").returncode == 0:
             print("바뀐 것 없음 — 푸시 안 함")
             return
         r = git("commit", "-m", f"data: comments update {now}")
+        if r.returncode != 0:
+            print(f"[커밋 실패] {(r.stdout + r.stderr)[-400:]}")
+            return
         p = git("push", "origin", "main")
         print("푸시 완료" if p.returncode == 0 else f"[푸시 실패] {p.stderr[-400:]}")
 
