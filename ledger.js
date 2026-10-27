@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-10-27 22:01",
+ "updated": "2026-10-28 07:01",
  "guests": [
   {
    "name": "luna.the.fox.uwu",
@@ -23,6 +23,12 @@ window.LEDGER = {
    "name": "the.cyber.cypher",
    "visits": 2,
    "first": "2026-10-26 22:10",
+   "served": []
+  },
+  {
+   "name": "nobody0fnowhere2024",
+   "visits": 2,
+   "first": "2026-10-26 23:28",
    "served": []
   },
   {
@@ -89,12 +95,6 @@ window.LEDGER = {
    "name": "debbienigiryu",
    "visits": 1,
    "first": "2026-10-26 22:57",
-   "served": []
-  },
-  {
-   "name": "nobody0fnowhere2024",
-   "visits": 1,
-   "first": "2026-10-26 23:28",
    "served": []
   },
   {
@@ -437,6 +437,510 @@ window.LEDGER = {
    "name": "mini_mouse_ct",
    "visits": 1,
    "first": "2026-10-27 21:57",
+   "served": []
+  },
+  {
+   "name": "sweetcthewizard",
+   "visits": 1,
+   "first": "2026-10-27 22:00",
+   "served": []
+  },
+  {
+   "name": "serina67019",
+   "visits": 1,
+   "first": "2026-10-27 22:02",
+   "served": []
+  },
+  {
+   "name": "gelia_kliana",
+   "visits": 1,
+   "first": "2026-10-27 22:02",
+   "served": []
+  },
+  {
+   "name": "gamingwithyarobloxgurlie",
+   "visits": 1,
+   "first": "2026-10-27 22:03",
+   "served": []
+  },
+  {
+   "name": "raya_unseen__",
+   "visits": 1,
+   "first": "2026-10-27 22:06",
+   "served": []
+  },
+  {
+   "name": "elostaz_yahia",
+   "visits": 1,
+   "first": "2026-10-27 22:06",
+   "served": []
+  },
+  {
+   "name": "hammyhannahams",
+   "visits": 1,
+   "first": "2026-10-27 22:07",
+   "served": []
+  },
+  {
+   "name": "bash_edits100",
+   "visits": 1,
+   "first": "2026-10-27 22:08",
+   "served": []
+  },
+  {
+   "name": "dryz1_1",
+   "visits": 1,
+   "first": "2026-10-27 22:09",
+   "served": []
+  },
+  {
+   "name": "viktorpersbo",
+   "visits": 1,
+   "first": "2026-10-27 22:14",
+   "served": []
+  },
+  {
+   "name": "i_like_waffleshs",
+   "visits": 1,
+   "first": "2026-10-27 22:16",
+   "served": []
+  },
+  {
+   "name": "chinese_cat122",
+   "visits": 1,
+   "first": "2026-10-27 22:19",
+   "served": []
+  },
+  {
+   "name": "lcl_56hg",
+   "visits": 1,
+   "first": "2026-10-27 22:33",
+   "served": []
+  },
+  {
+   "name": "shawarmamunvir",
+   "visits": 1,
+   "first": "2026-10-27 22:50",
+   "served": []
+  },
+  {
+   "name": "ohiocold",
+   "visits": 1,
+   "first": "2026-10-27 22:51",
+   "served": []
+  },
+  {
+   "name": "christopher_bose",
+   "visits": 1,
+   "first": "2026-10-27 22:54",
+   "served": []
+  },
+  {
+   "name": "mr.cyan.cube",
+   "visits": 1,
+   "first": "2026-10-27 22:55",
+   "served": []
+  },
+  {
+   "name": "gigafanpage76",
+   "visits": 1,
+   "first": "2026-10-27 23:00",
+   "served": []
+  },
+  {
+   "name": "icedragon519",
+   "visits": 1,
+   "first": "2026-10-27 23:01",
+   "served": []
+  },
+  {
+   "name": "azada56871",
+   "visits": 1,
+   "first": "2026-10-27 23:06",
+   "served": []
+  },
+  {
+   "name": "neeshanfriend",
+   "visits": 1,
+   "first": "2026-10-27 23:06",
+   "served": []
+  },
+  {
+   "name": "jorgennoah",
+   "visits": 1,
+   "first": "2026-10-27 23:07",
+   "served": []
+  },
+  {
+   "name": "loriiing",
+   "visits": 1,
+   "first": "2026-10-27 23:08",
+   "served": []
+  },
+  {
+   "name": "z10oe",
+   "visits": 1,
+   "first": "2026-10-27 23:20",
+   "served": []
+  },
+  {
+   "name": "ethan1134_v2",
+   "visits": 1,
+   "first": "2026-10-27 23:27",
+   "served": []
+  },
+  {
+   "name": "some_onepiece_guy",
+   "visits": 1,
+   "first": "2026-10-27 23:41",
+   "served": []
+  },
+  {
+   "name": "ascii_helper",
+   "visits": 1,
+   "first": "2026-10-27 23:53",
+   "served": []
+  },
+  {
+   "name": "agnomenotagnoblin",
+   "visits": 1,
+   "first": "2026-10-28 00:00",
+   "served": []
+  },
+  {
+   "name": "evi_lily_of_the_valley_lover",
+   "visits": 1,
+   "first": "2026-10-28 00:04",
+   "served": []
+  },
+  {
+   "name": "domien613",
+   "visits": 1,
+   "first": "2026-10-28 00:10",
+   "served": []
+  },
+  {
+   "name": "vanshagg_9032",
+   "visits": 1,
+   "first": "2026-10-28 00:12",
+   "served": []
+  },
+  {
+   "name": "sri254239",
+   "visits": 1,
+   "first": "2026-10-28 00:16",
+   "served": []
+  },
+  {
+   "name": "questrian_",
+   "visits": 1,
+   "first": "2026-10-28 00:21",
+   "served": []
+  },
+  {
+   "name": "bobmanagerthegoat",
+   "visits": 1,
+   "first": "2026-10-28 00:35",
+   "served": []
+  },
+  {
+   "name": "samarthgurungking",
+   "visits": 1,
+   "first": "2026-10-28 00:36",
+   "served": []
+  },
+  {
+   "name": "rosennailsgotha_marktstr.18",
+   "visits": 1,
+   "first": "2026-10-28 00:36",
+   "served": []
+  },
+  {
+   "name": "frozenfox410",
+   "visits": 1,
+   "first": "2026-10-28 00:44",
+   "served": []
+  },
+  {
+   "name": "kootcp",
+   "visits": 1,
+   "first": "2026-10-28 00:58",
+   "served": []
+  },
+  {
+   "name": "this_is_alee",
+   "visits": 1,
+   "first": "2026-10-28 01:10",
+   "served": []
+  },
+  {
+   "name": "der_mountainbike_fahrer",
+   "visits": 1,
+   "first": "2026-10-28 01:18",
+   "served": []
+  },
+  {
+   "name": "isej2319",
+   "visits": 1,
+   "first": "2026-10-28 01:18",
+   "served": []
+  },
+  {
+   "name": "gabgabless",
+   "visits": 1,
+   "first": "2026-10-28 01:18",
+   "served": []
+  },
+  {
+   "name": "sharmin_saivanker",
+   "visits": 1,
+   "first": "2026-10-28 01:19",
+   "served": []
+  },
+  {
+   "name": "martnullscape",
+   "visits": 1,
+   "first": "2026-10-28 01:33",
+   "served": []
+  },
+  {
+   "name": "hannaliisak123",
+   "visits": 1,
+   "first": "2026-10-28 01:59",
+   "served": []
+  },
+  {
+   "name": "al2525l",
+   "visits": 1,
+   "first": "2026-10-28 02:12",
+   "served": []
+  },
+  {
+   "name": "mrcheezyguy",
+   "visits": 1,
+   "first": "2026-10-28 02:16",
+   "served": []
+  },
+  {
+   "name": "de.wayne2421",
+   "visits": 1,
+   "first": "2026-10-28 02:17",
+   "served": []
+  },
+  {
+   "name": "mira_221219",
+   "visits": 1,
+   "first": "2026-10-28 02:20",
+   "served": []
+  },
+  {
+   "name": "o_amethyst_paw_o",
+   "visits": 1,
+   "first": "2026-10-28 02:22",
+   "served": []
+  },
+  {
+   "name": "pupse55",
+   "visits": 1,
+   "first": "2026-10-28 02:22",
+   "served": []
+  },
+  {
+   "name": "julie_the.furry",
+   "visits": 1,
+   "first": "2026-10-28 02:23",
+   "served": []
+  },
+  {
+   "name": "eyad.elsa3id",
+   "visits": 1,
+   "first": "2026-10-28 02:25",
+   "served": []
+  },
+  {
+   "name": "pingpong_1154",
+   "visits": 1,
+   "first": "2026-10-28 02:37",
+   "served": []
+  },
+  {
+   "name": "isa1sonic5",
+   "visits": 1,
+   "first": "2026-10-28 03:02",
+   "served": []
+  },
+  {
+   "name": "ana.anastasia123",
+   "visits": 1,
+   "first": "2026-10-28 03:08",
+   "served": []
+  },
+  {
+   "name": "real_noob123",
+   "visits": 1,
+   "first": "2026-10-28 03:11",
+   "served": []
+  },
+  {
+   "name": "emma.059_",
+   "visits": 1,
+   "first": "2026-10-28 03:12",
+   "served": []
+  },
+  {
+   "name": "joaodiego694",
+   "visits": 1,
+   "first": "2026-10-28 03:17",
+   "served": []
+  },
+  {
+   "name": "parsxx_41",
+   "visits": 1,
+   "first": "2026-10-28 03:20",
+   "served": []
+  },
+  {
+   "name": "read._.a",
+   "visits": 1,
+   "first": "2026-10-28 03:24",
+   "served": []
+  },
+  {
+   "name": "migueld.cicero",
+   "visits": 1,
+   "first": "2026-10-28 03:47",
+   "served": []
+  },
+  {
+   "name": "nickguur_",
+   "visits": 1,
+   "first": "2026-10-28 04:03",
+   "served": []
+  },
+  {
+   "name": "youcefoulk_",
+   "visits": 1,
+   "first": "2026-10-28 04:11",
+   "served": []
+  },
+  {
+   "name": "mrtoothpasteboy",
+   "visits": 1,
+   "first": "2026-10-28 04:14",
+   "served": []
+  },
+  {
+   "name": "nemesis__stars",
+   "visits": 1,
+   "first": "2026-10-28 04:22",
+   "served": []
+  },
+  {
+   "name": "dukesreviewcrew",
+   "visits": 1,
+   "first": "2026-10-28 04:23",
+   "served": []
+  },
+  {
+   "name": "max1k_jablonsky",
+   "visits": 1,
+   "first": "2026-10-28 04:27",
+   "served": []
+  },
+  {
+   "name": "cr1ms0n_h0rnet",
+   "visits": 1,
+   "first": "2026-10-28 04:33",
+   "served": []
+  },
+  {
+   "name": "ayazzsafak",
+   "visits": 1,
+   "first": "2026-10-28 04:39",
+   "served": []
+  },
+  {
+   "name": "kaireldockerty",
+   "visits": 1,
+   "first": "2026-10-28 04:49",
+   "served": []
+  },
+  {
+   "name": "ademio55",
+   "visits": 1,
+   "first": "2026-10-28 05:14",
+   "served": []
+  },
+  {
+   "name": "idk_whattoputin",
+   "visits": 1,
+   "first": "2026-10-28 05:25",
+   "served": []
+  },
+  {
+   "name": "daviemanuelanjos",
+   "visits": 1,
+   "first": "2026-10-28 05:35",
+   "served": []
+  },
+  {
+   "name": "gomal_jogi",
+   "visits": 1,
+   "first": "2026-10-28 05:37",
+   "served": []
+  },
+  {
+   "name": "moukhtartopone",
+   "visits": 1,
+   "first": "2026-10-28 05:44",
+   "served": []
+  },
+  {
+   "name": "harpergrace611",
+   "visits": 1,
+   "first": "2026-10-28 05:46",
+   "served": []
+  },
+  {
+   "name": "jeshua7417",
+   "visits": 1,
+   "first": "2026-10-28 05:59",
+   "served": []
+  },
+  {
+   "name": "307dro",
+   "visits": 1,
+   "first": "2026-10-28 06:07",
+   "served": []
+  },
+  {
+   "name": "queenarabellacabrera",
+   "visits": 1,
+   "first": "2026-10-28 06:28",
+   "served": []
+  },
+  {
+   "name": "girona_luo_",
+   "visits": 1,
+   "first": "2026-10-28 06:36",
+   "served": []
+  },
+  {
+   "name": "regim2014",
+   "visits": 1,
+   "first": "2026-10-28 06:49",
+   "served": []
+  },
+  {
+   "name": "gigi.giugio",
+   "visits": 1,
+   "first": "2026-10-28 06:53",
+   "served": []
+  },
+  {
+   "name": "lilika.rms",
+   "visits": 1,
+   "first": "2026-10-28 06:59",
    "served": []
   }
  ]
