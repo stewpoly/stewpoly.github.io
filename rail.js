@@ -1,25 +1,55 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.RAIL = {
- "updated": "2026-10-27 17:00",
- "reel": "https://www.instagram.com/reel/De-oCMKk0Yt/",
+ "updated": "2026-10-27 22:01",
+ "reel": "https://www.instagram.com/reel/De_g8UxEXmb/",
  "orders": [
   {
-   "id": "18116987531083997",
-   "username": "the.cyber.cypher",
-   "text": "Apple Pie, with lots of teeth- for the crunch (perks if anyone gets the reference)",
-   "likes": 5
+   "id": "18128340154865095",
+   "username": "khangaimiagmarsuren",
+   "text": "His own pot",
+   "likes": 21
   },
   {
-   "id": "17949044526066949",
-   "username": "south.disaster",
-   "text": "Carbonara with little pigs instead of pancetta. Just kind of cute!",
-   "likes": 1
+   "id": "18470882710143269",
+   "username": "parson_face",
+   "text": "A full three corse meal of uranium",
+   "likes": 20
   },
   {
-   "id": "18477317161113372",
+   "id": "18122261350742623",
+   "username": "veryverysillyperson2",
+   "text": "A black hole, heheheheheh…",
+   "likes": 16
+  },
+  {
+   "id": "17939305059123558",
+   "username": "orhn_bu",
+   "text": "my dihh",
+   "likes": 10
+  },
+  {
+   "id": "18109424450099626",
    "username": "heresmyusername1",
-   "text": "Potato soup add some walking mushrooms in it",
-   "likes": 0
+   "text": "Dragon’s tail",
+   "likes": 4
+  },
+  {
+   "id": "18185293603421572",
+   "username": "easilyfallingintoyou",
+   "text": "your dad",
+   "likes": 4
+  },
+  {
+   "id": "18110942132616140",
+   "username": "biel_pini",
+   "text": "1 Cup vanilla extract",
+   "likes": 4
+  },
+  {
+   "id": "18119315147052240",
+   "username": "quini.bon",
+   "text": "unicorn shit",
+   "likes": 3
   }
  ]
 };
