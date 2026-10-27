@@ -10,6 +10,7 @@ import argparse
 import hashlib
 import html
 import json
+import re
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -116,14 +117,24 @@ def main(force=False):
     for d in dishes:
         if d.get("requester"):
             served.setdefault(d["requester"].lower(), []).append({"name": d["name"], "slug": d["slug"]})
+    # 릴스 대장: reels.txt 순서 = 게시 순서. 요리가 된 릴스는 요리 이름을 라벨로 쓴다
+    code = lambda url: (re.search(r"/(?:p|reel|reels|tv)/([A-Za-z0-9_-]+)", url or "") or [None, None])[1]
+    dish_by_code = {code(d.get("reel")): d["name"] for d in dishes if code(d.get("reel"))}
+    reel_list = []
+    for u in lines("reels.txt"):
+        c = code(u)
+        if c:
+            reel_list.append({"code": c, "label": dish_by_code.get(c) or f"Reel {len(reel_list) + 1}", "url": u})
     rows = []
     for u, g in guests.get("users", {}).items():
         if u.lower() in hide:
             continue
-        rows.append({"name": u, "visits": len(g.get("reels", [])) or 1, "first": g.get("first"), "served": served.get(u.lower(), [])})
-    # 채택된 사람이 먼저, 그다음 방문(댓글 단 릴스) 많은 순, 같으면 먼저 온 순
-    rows.sort(key=lambda r: (-len(r["served"]), -r["visits"], r["first"] or ""))
-    write_js("ledger.js", "LEDGER", {"updated": guests.get("updated"), "guests": rows})
+        rows.append({"name": u, "visits": len(g.get("reels", [])) or 1, "comments": g.get("comments", 1),
+                     "reels": g.get("reels", []), "first": g.get("first"), "last": g.get("last"),
+                     "served": served.get(u.lower(), [])})
+    # 채택된 사람이 먼저, 그다음 방문(댓글 단 릴스) 많은 순, 같으면 댓글 많은 순, 같으면 먼저 온 순
+    rows.sort(key=lambda r: (-len(r["served"]), -r["visits"], -r["comments"], r["first"] or ""))
+    write_js("ledger.js", "LEDGER", {"updated": guests.get("updated"), "reels": reel_list, "guests": rows})
 
     orders = [o for o in rail.get("orders", []) if o["username"].lower() not in hide and str(o.get("id")) not in hide]
     write_js("rail.js", "RAIL", {"updated": rail.get("updated"), "reel": rail.get("reel"), "orders": orders})

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Menu — stewpoly</title>
+<meta name="description" content="Every dish the stewpoly kitchen has cooked so far.">
+<meta property="og:title" content="The Menu — stewpoly">
+<meta property="og:description" content="Every dish the stewpoly kitchen has cooked so far.">
+<meta property="og:image" content="https://stewpoly.github.io/img/og.jpg">
+<meta name="theme-color" content="#120c1c">
+<link rel="icon" href="../img/avatar.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --night:#120c1c;--night2:#1b1229;--plum:#2a1d3d;--plum2:#3a2a52;
+    --ink:#fff1dc;--dim:#cbb9d6;--fire:#ffb457;--fire2:#ffd68f;--sauce:#d2541a;--paper:#f6ead2;
+    --head:"Fredoka","Trebuchet MS",system-ui,sans-serif;--body:"Nunito",system-ui,sans-serif}
+  *{box-sizing:border-box;margin:0}
+  html{background:var(--night);scroll-behavior:smooth}
+  body{color:var(--ink);font:400 17px/1.6 var(--body);overflow-x:hidden;-webkit-font-smoothing:antialiased;
+    background:linear-gradient(180deg,var(--night) 0,var(--night2) 40%,#150e21 100%)}
+  h1,h2,h3,.btn,.kicker,.nav{font-family:var(--head)}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 16px}
+  body::after{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opacity:.3;transform:translateZ(0);
+    background:url(../img/paper.png) 0 0/256px 256px}
+  a{color:inherit}
+
+  /* 위쪽 이동줄 (두 페이지 공통) */
+  .nav{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:6px;padding:10px 16px;
+    background:rgba(18,12,28,.88);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,214,143,.15)}
+  .nav .brand{font-weight:700;font-size:1.25rem;color:var(--fire2);text-decoration:none;margin-right:auto;letter-spacing:.01em}
+  .nav a.l{padding:7px 14px;border-radius:99px;text-decoration:none;font-weight:600;font-size:.95rem;color:var(--dim)}
+  .nav a.l:hover{color:var(--ink)}
+  .nav a.l.on{color:#2b160a;background:linear-gradient(#ffd68f,#f0a54d)}
+
+  .kicker{display:block;color:var(--fire);font-size:.85rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 26px;border-radius:99px;font-size:1.02rem;font-weight:600;
+    text-decoration:none;cursor:pointer;border:0;color:#2b160a;background:linear-gradient(#ffd68f,#f0a54d);
+    box-shadow:0 5px 0 #8a5522,0 14px 30px rgba(255,150,60,.25);transition:transform .15s}
+  .btn:hover{transform:translateY(3px)}
+  .btn.ghost{color:var(--fire2);background:rgba(42,29,61,.75);box-shadow:inset 0 0 0 2px rgba(255,214,143,.5)}
+
+  .menu{margin-top:7svh;text-align:center;position:relative;isolation:isolate}
+  .menu .wash{position:absolute;pointer-events:none;z-index:-1;width:830px;height:830px;left:50%;top:-60px;margin-left:-415px;
+    background:url(../img/wash_herb.png) center/contain no-repeat}
+  .menu h1{font-size:clamp(2.2rem,6vw,3.4rem);font-weight:600;margin-top:8px;line-height:1.1}
+  .menu .count{color:var(--dim);font-weight:600;margin-top:6px}
+  .grid{margin-top:34px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,300px));gap:26px;justify-content:center;text-align:left}
+  .card{display:block;color:inherit;text-decoration:none;position:relative;isolation:isolate;border-radius:22px;cursor:pointer;opacity:0;transform:translateY(30px);
+    transition:opacity .7s,transform .7s cubic-bezier(.2,.8,.2,1)}
+  .card::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:22px;background:var(--plum);
+    box-shadow:0 0 0 2px rgba(255,214,143,.18),0 24px 50px rgba(0,0,0,.45),inset 0 0 30px rgba(10,6,18,.45);transition:box-shadow .3s}
+  .card.in{opacity:1;transform:none}
+  .card:hover::before{box-shadow:0 0 0 2px rgba(255,214,143,.6),0 0 60px rgba(255,170,80,.25),0 24px 50px rgba(0,0,0,.45),inset 0 0 30px rgba(10,6,18,.45)}
+  .card:hover{transform:translateY(-4px)}
+  .card .ph{border-radius:22px 22px 0 0;overflow:hidden}
+  .card img{display:block;width:100%;aspect-ratio:1;object-fit:cover;transition:transform .6s}
+  .card:hover img{transform:scale(1.05)}
+  .card .m{padding:14px 18px 18px}
+  .card h3{font-size:1.25rem;font-weight:600}
+  .card .by{color:var(--fire2);font-size:.88rem;font-weight:700;margin-top:2px}
+  .card .note{color:var(--ink);font-size:.92rem;margin-top:8px;opacity:.9}
+  .card .ing{color:var(--dim);font-size:.85rem;margin-top:6px;font-style:italic}
+  .soon{position:relative;isolation:isolate;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:260px;
+    border-radius:22px;color:var(--dim);text-align:center;padding:24px;font-weight:600;border:2px dashed rgba(255,214,143,.4);background:rgba(255,180,87,.04)}
+  .soon .big{font:600 1.2rem var(--head);color:var(--fire2)}
+  .back{margin:46px 0 0;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+  .foot{margin-top:12svh;position:relative;height:150px;
+    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='120' viewBox='0 0 240 120'%3E%3Cg fill='%230b0712'%3E%3Cpath d='M34 120V100L12 100 34 72 18 72 38 44 24 44 44 12 64 44 50 44 70 72 54 72 76 100 54 100V120z'/%3E%3Cpath d='M142 120V102L122 102 142 78 128 78 148 50 136 50 154 20 172 50 160 50 180 78 166 78 186 102 166 102V120z'/%3E%3Cpath d='M206 120V108L194 108 208 90 199 90 212 70 225 90 216 90 230 108 218 108V120z'/%3E%3C/g%3E%3C/svg%3E") repeat-x bottom/240px 120px}
+  .groundbar{background:#0b0712;color:var(--dim);text-align:center;font-size:.86rem;padding:14px 16px 22px;font-weight:600}
+  .groundbar a{color:var(--fire2)}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="brand" href="../">stewpoly</a>
+  <a class="l" href="../#ledger">Ledger</a>
+  <a class="l on" href="./">Menu</a>
+  <a class="l" href="https://www.instagram.com/stewpoly/" target="_blank" rel="noopener">Instagram</a>
+</nav>
+
+<main class="menu wrap">
+  <div class="wash"></div>
+  <span class="kicker">Cooked so far</span>
+  <h1>The Menu</h1>
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+  <div class="back">
+    <a class="btn" href="../#ledger">Open the ledger</a>
+    <a class="btn ghost" href="https://www.instagram.com/stewpoly/" target="_blank" rel="noopener">Watch on Instagram</a>
+  </div>
+</main>
+
+<div class="foot" aria-hidden="true"></div>
+<div class="groundbar">stewpoly · low-poly fantasy kitchen · <a href="https://www.instagram.com/stewpoly/" target="_blank" rel="noopener">@stewpoly</a></div>
+
+<script src="../dishes.js"></script>
+<script>
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const D = window.DISHES || [], grid = document.getElementById('grid');
+  document.getElementById('count').textContent = D.length + (D.length === 1 ? ' dish' : ' dishes') + ' on the menu';
+  const seen = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); seen.unobserve(e.target); } }), {threshold: .12});
+  D.forEach((d, i) => {
+    const el = document.createElement('a'); el.className = 'card'; el.href = `../d/${encodeURIComponent(d.slug)}/`;
+    el.style.transitionDelay = (i % 3) * .08 + 's';
+    el.innerHTML = `<div class="ph"><img src="../${esc(d.image)}" alt="${esc(d.name)}" loading="lazy"></div>
+      <div class="m"><h3>${esc(d.name)}</h3><div class="by">For ${esc(d.by)}</div>
+      ${d.note ? `<div class="note">${esc(d.note)}</div>` : ''}
+      <div class="ing">${(d.ingredients || []).map(esc).join(' · ')}</div></div>`;
+    grid.appendChild(el); seen.observe(el);
+  });
+  const nx = document.createElement('div'); nx.className = 'soon';
+  nx.innerHTML = '<span class="big">The next pot is on the fire</span><span>New dishes land here first.</span>';
+  grid.appendChild(nx);
+</script>
+</body>
+</html>
