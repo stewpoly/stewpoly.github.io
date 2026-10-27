@@ -1,6 +1,24 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.DISHES = [
  {
+  "slug": "mimic-boil",
+  "name": "Mimic Boil",
+  "note": "One chest that bit a knight's helmet, cooked whole. The teeth were clams. The coins were corn.",
+  "ingredients": [
+   "whole mimic chest",
+   "tooth clams",
+   "mimic tongue steak",
+   "corn coins",
+   "soup"
+  ],
+  "orderedBy": "A dented knight",
+  "requester": "",
+  "date": "2026-10-27",
+  "image": "img/mimic-boil.jpg",
+  "reel": "",
+  "by": "A dented knight"
+ },
+ {
   "slug": "bloody-ramen",
   "name": "Bloody Ramen",
   "note": "Extra hearts, as requested. They kept peeking out of the pot until the lid came down.",
