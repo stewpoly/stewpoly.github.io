@@ -1,6 +1,23 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.DISHES = [
  {
+  "slug": "teeth-apple-pie",
+  "name": "Apple Pie, with lots of teeth",
+  "note": "Five toothy apples, one flaky crust. The pie bites back.",
+  "ingredients": [
+   "toothy apples (extra teeth)",
+   "pie dough",
+   "top crust",
+   "oven embers"
+  ],
+  "orderedBy": "",
+  "requester": "the.cyber.cypher",
+  "date": "2026-10-28",
+  "image": "img/teeth-apple-pie.jpg",
+  "reel": "https://www.instagram.com/reel/DfA5W-OFogx/",
+  "by": "@the.cyber.cypher"
+ },
+ {
   "slug": "bloody-ramen",
   "name": "Bloody Ramen",
   "note": "Extra hearts, as requested. They kept peeking out of the pot until the lid came down.",
