@@ -1,55 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.RAIL = {
- "updated": "2026-10-27 07:00",
- "reel": "https://www.instagram.com/reel/De87Vmwx57c/",
- "orders": [
-  {
-   "id": "18076074620472407",
-   "username": "naarak.msin",
-   "text": "Tom Yum soup with Kraken tentacles",
-   "likes": 4
-  },
-  {
-   "id": "18155286379531019",
-   "username": "twisted.armageddon",
-   "text": "Kraken Soup",
-   "likes": 3
-  },
-  {
-   "id": "17939003703123153",
-   "username": "1nflammable_",
-   "text": "Sautéed beetle with cockroach puree",
-   "likes": 2
-  },
-  {
-   "id": "17986819238892228",
-   "username": "ivanov_a1112",
-   "text": "Lasagna with jellyfish",
-   "likes": 2
-  },
-  {
-   "id": "18118306319102557",
-   "username": "vibhuti.2008",
-   "text": "Vegetable curry made out of dragon land veggies",
-   "likes": 2
-  },
-  {
-   "id": "18193015471401338",
-   "username": "sarahgraygravy",
-   "text": "sugar cookie",
-   "likes": 2
-  },
-  {
-   "id": "18135150314505843",
-   "username": "random_matt.07",
-   "text": "spider noodles",
-   "likes": 2
-  },
-  {
-   "id": "18118616312591263",
-   "username": "vivi_zephyr1",
-   "text": "May I please have scream cheese on a piece of toast with a glass of orange juice?",
-   "likes": 2
-  }
- ]
+ "updated": "2026-10-27 10:01",
+ "reel": "https://www.instagram.com/reel/De-oCMKk0Yt/",
+ "orders": []
 };

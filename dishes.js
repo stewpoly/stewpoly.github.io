@@ -1,6 +1,24 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.DISHES = [
  {
+  "slug": "bloody-ramen",
+  "name": "Bloody Ramen",
+  "note": "Extra hearts, as requested. They kept peeking out of the pot until the lid came down.",
+  "ingredients": [
+   "beating hearts (extra)",
+   "hand-cut noodles",
+   "red broth",
+   "soft egg",
+   "chashu"
+  ],
+  "orderedBy": "",
+  "requester": "luna.the.fox.uwu",
+  "date": "2026-10-27",
+  "image": "img/bloody-ramen.jpg",
+  "reel": "https://www.instagram.com/reel/De-oCMKk0Yt/",
+  "by": "@luna.the.fox.uwu"
+ },
+ {
   "slug": "mandrake-stew",
   "name": "Mandrake Stew",
   "note": "One mandrake, extra carrots. He sulked a little, then settled in for a warm soak.",

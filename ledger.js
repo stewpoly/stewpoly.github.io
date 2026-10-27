@@ -1,7 +1,18 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-10-27 07:00",
+ "updated": "2026-10-27 10:01",
  "guests": [
+  {
+   "name": "luna.the.fox.uwu",
+   "visits": 1,
+   "first": "2026-10-26 21:59",
+   "served": [
+    {
+     "name": "Bloody Ramen",
+     "slug": "bloody-ramen"
+    }
+   ]
+  },
   {
    "name": "naarak.msin",
    "visits": 1,
@@ -57,12 +68,6 @@ window.LEDGER = {
    "served": []
   },
   {
-   "name": "luna.the.fox.uwu",
-   "visits": 1,
-   "first": "2026-10-26 21:59",
-   "served": []
-  },
-  {
    "name": "the.cyber.cypher",
    "visits": 1,
    "first": "2026-10-26 22:10",
@@ -108,6 +113,18 @@ window.LEDGER = {
    "name": "jay_manga05",
    "visits": 1,
    "first": "2026-10-27 03:42",
+   "served": []
+  },
+  {
+   "name": "laurennncce",
+   "visits": 1,
+   "first": "2026-10-27 08:39",
+   "served": []
+  },
+  {
+   "name": "angrywhaleshark",
+   "visits": 1,
+   "first": "2026-10-27 09:31",
    "served": []
   }
  ]
