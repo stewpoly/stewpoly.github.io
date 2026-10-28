@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-10-28 07:32",
+ "updated": "2026-10-28 12:01",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -26,14 +26,15 @@ window.LEDGER = {
  "guests": [
   {
    "name": "the.cyber.cypher",
-   "visits": 2,
-   "comments": 2,
+   "visits": 3,
+   "comments": 3,
    "reels": [
     "De87Vmwx57c",
-    "De-oCMKk0Yt"
+    "De-oCMKk0Yt",
+    "DfA5W-OFogx"
    ],
    "first": "2026-10-26 22:10",
-   "last": "2026-10-27 10:24",
+   "last": "2026-10-28 07:58",
    "served": [
     {
      "name": "Apple Pie, with lots of teeth",
@@ -1752,6 +1753,270 @@ window.LEDGER = {
    ],
    "first": "2026-10-28 06:59",
    "last": "2026-10-28 06:59",
+   "served": []
+  },
+  {
+   "name": "keegan_nerdington_the3rd",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 07:33",
+   "last": "2026-10-28 07:33",
+   "served": []
+  },
+  {
+   "name": "liamisfrickinawesome",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 07:33",
+   "last": "2026-10-28 07:33",
+   "served": []
+  },
+  {
+   "name": "tomipriegobr",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 07:38",
+   "last": "2026-10-28 07:38",
+   "served": []
+  },
+  {
+   "name": "gbyy._____",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 07:51",
+   "last": "2026-10-28 07:51",
+   "served": []
+  },
+  {
+   "name": "b1zzare.k",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfA5W-OFogx"
+   ],
+   "first": "2026-10-28 08:03",
+   "last": "2026-10-28 08:03",
+   "served": []
+  },
+  {
+   "name": "nic_haute_coco",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 08:21",
+   "last": "2026-10-28 08:21",
+   "served": []
+  },
+  {
+   "name": "gohsteviro",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 08:30",
+   "last": "2026-10-28 08:30",
+   "served": []
+  },
+  {
+   "name": "ichigoworkingfortheidfsociety",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 08:34",
+   "last": "2026-10-28 08:34",
+   "served": []
+  },
+  {
+   "name": "mayeziyrebubles",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 08:41",
+   "last": "2026-10-28 08:41",
+   "served": []
+  },
+  {
+   "name": "mommiesy",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 09:33",
+   "last": "2026-10-28 09:33",
+   "served": []
+  },
+  {
+   "name": "jack_voit",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 09:33",
+   "last": "2026-10-28 09:33",
+   "served": []
+  },
+  {
+   "name": "ghala.aaaaa",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 09:33",
+   "last": "2026-10-28 09:33",
+   "served": []
+  },
+  {
+   "name": "butt_booty_big_dick_randy",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 09:33",
+   "last": "2026-10-28 09:33",
+   "served": []
+  },
+  {
+   "name": "sus77712",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 09:41",
+   "last": "2026-10-28 09:41",
+   "served": []
+  },
+  {
+   "name": "ssxzyy",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfA5W-OFogx"
+   ],
+   "first": "2026-10-28 09:50",
+   "last": "2026-10-28 09:50",
+   "served": []
+  },
+  {
+   "name": "nikeskem",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 10:02",
+   "last": "2026-10-28 10:02",
+   "served": []
+  },
+  {
+   "name": "yo_daily_drew",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 10:15",
+   "last": "2026-10-28 10:15",
+   "served": []
+  },
+  {
+   "name": "rip.felix1138",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 10:20",
+   "last": "2026-10-28 10:20",
+   "served": []
+  },
+  {
+   "name": "i_heal_people",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 10:40",
+   "last": "2026-10-28 10:40",
+   "served": []
+  },
+  {
+   "name": "weratesealiones",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 10:59",
+   "last": "2026-10-28 10:59",
+   "served": []
+  },
+  {
+   "name": "averagedude.npc",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 11:27",
+   "last": "2026-10-28 11:27",
+   "served": []
+  },
+  {
+   "name": "ivan_cornejo5184",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 11:37",
+   "last": "2026-10-28 11:37",
+   "served": []
+  },
+  {
+   "name": "ericaboonboon",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 11:43",
+   "last": "2026-10-28 11:43",
+   "served": []
+  },
+  {
+   "name": "sara.lucero.50115",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-28 11:56",
+   "last": "2026-10-28 11:56",
    "served": []
   }
  ]
