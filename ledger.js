@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-10-29 17:02",
+ "updated": "2026-10-29 22:02",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -26,6 +26,11 @@ window.LEDGER = {
    "code": "DfCD5IciiIx",
    "label": "Reel 5",
    "url": "https://www.instagram.com/reel/DfCD5IciiIx/"
+  },
+  {
+   "code": "DfEorp2ACLx",
+   "label": "Reel 6",
+   "url": "https://www.instagram.com/reel/DfEorp2ACLx/"
   }
  ],
  "guests": [
@@ -158,6 +163,18 @@ window.LEDGER = {
    ],
    "first": "2026-10-27 20:17",
    "last": "2026-10-28 22:00",
+   "served": []
+  },
+  {
+   "name": "imlikeniffty",
+   "visits": 2,
+   "comments": 2,
+   "reels": [
+    "De_g8UxEXmb",
+    "DfEorp2ACLx"
+   ],
+   "first": "2026-10-27 20:24",
+   "last": "2026-10-29 21:58",
    "served": []
   },
   {
@@ -571,17 +588,6 @@ window.LEDGER = {
    ],
    "first": "2026-10-27 20:18",
    "last": "2026-10-27 20:18",
-   "served": []
-  },
-  {
-   "name": "imlikeniffty",
-   "visits": 1,
-   "comments": 1,
-   "reels": [
-    "De_g8UxEXmb"
-   ],
-   "first": "2026-10-27 20:24",
-   "last": "2026-10-27 20:24",
    "served": []
   },
   {
@@ -2573,6 +2579,39 @@ window.LEDGER = {
    ],
    "first": "2026-10-29 16:36",
    "last": "2026-10-29 16:36",
+   "served": []
+  },
+  {
+   "name": "ethanpeor",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-29 18:57",
+   "last": "2026-10-29 18:57",
+   "served": []
+  },
+  {
+   "name": "yassine60905",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-29 20:20",
+   "last": "2026-10-29 20:20",
+   "served": []
+  },
+  {
+   "name": "1only_samarpan",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-29 20:54",
+   "last": "2026-10-29 20:54",
    "served": []
   }
  ]
