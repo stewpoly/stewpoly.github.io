@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-10-30 12:02",
+ "updated": "2026-10-30 17:02",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -79,6 +79,19 @@ window.LEDGER = {
    ],
    "first": "2026-10-26 23:28",
    "last": "2026-10-29 05:49",
+   "served": []
+  },
+  {
+   "name": "science_almond_flour_uncookie",
+   "visits": 3,
+   "comments": 3,
+   "reels": [
+    "De_g8UxEXmb",
+    "DfA5W-OFogx",
+    "DfEorp2ACLx"
+   ],
+   "first": "2026-10-28 12:56",
+   "last": "2026-10-30 14:24",
    "served": []
   },
   {
@@ -223,18 +236,6 @@ window.LEDGER = {
    ],
    "first": "2026-10-28 07:33",
    "last": "2026-10-28 12:41",
-   "served": []
-  },
-  {
-   "name": "science_almond_flour_uncookie",
-   "visits": 2,
-   "comments": 2,
-   "reels": [
-    "De_g8UxEXmb",
-    "DfA5W-OFogx"
-   ],
-   "first": "2026-10-28 12:56",
-   "last": "2026-10-28 13:09",
    "served": []
   },
   {
