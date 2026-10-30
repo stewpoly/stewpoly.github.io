@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-10-30 22:02",
+ "updated": "2026-10-31 07:02",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -265,6 +265,18 @@ window.LEDGER = {
    ],
    "first": "2026-10-28 17:14",
    "last": "2026-10-28 20:00",
+   "served": []
+  },
+  {
+   "name": "deadstarkitt",
+   "visits": 2,
+   "comments": 2,
+   "reels": [
+    "De_g8UxEXmb",
+    "DfHNepgCE3x"
+   ],
+   "first": "2026-10-31 00:12",
+   "last": "2026-10-31 00:13",
    "served": []
   },
   {
@@ -2729,6 +2741,39 @@ window.LEDGER = {
    ],
    "first": "2026-10-30 19:54",
    "last": "2026-10-30 19:54",
+   "served": []
+  },
+  {
+   "name": "light_is_cool12",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-30 23:55",
+   "last": "2026-10-30 23:55",
+   "served": []
+  },
+  {
+   "name": "auntie._.venom",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-31 00:53",
+   "last": "2026-10-31 00:53",
+   "served": []
+  },
+  {
+   "name": "imaginaryme04",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-31 02:58",
+   "last": "2026-10-31 02:58",
    "served": []
   }
  ]
