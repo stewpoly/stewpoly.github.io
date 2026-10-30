@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-10-30 17:02",
+ "updated": "2026-10-30 22:02",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -31,6 +31,11 @@ window.LEDGER = {
    "code": "DfEorp2ACLx",
    "label": "Reel 6",
    "url": "https://www.instagram.com/reel/DfEorp2ACLx/"
+  },
+  {
+   "code": "DfHNepgCE3x",
+   "label": "Reel 7",
+   "url": "https://www.instagram.com/reel/DfHNepgCE3x/"
   }
  ],
  "guests": [
@@ -200,6 +205,18 @@ window.LEDGER = {
    ],
    "first": "2026-10-27 20:57",
    "last": "2026-10-28 21:07",
+   "served": []
+  },
+  {
+   "name": "beautifulfamblessed",
+   "visits": 2,
+   "comments": 2,
+   "reels": [
+    "De_g8UxEXmb",
+    "DfHNepgCE3x"
+   ],
+   "first": "2026-10-27 21:08",
+   "last": "2026-10-30 18:24",
    "served": []
   },
   {
@@ -688,17 +705,6 @@ window.LEDGER = {
    ],
    "first": "2026-10-27 21:02",
    "last": "2026-10-27 21:02",
-   "served": []
-  },
-  {
-   "name": "beautifulfamblessed",
-   "visits": 1,
-   "comments": 1,
-   "reels": [
-    "De_g8UxEXmb"
-   ],
-   "first": "2026-10-27 21:08",
-   "last": "2026-10-27 21:08",
    "served": []
   },
   {
@@ -2657,6 +2663,72 @@ window.LEDGER = {
    ],
    "first": "2026-10-30 02:37",
    "last": "2026-10-30 02:37",
+   "served": []
+  },
+  {
+   "name": "ally.mahzq",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-30 17:05",
+   "last": "2026-10-30 17:05",
+   "served": []
+  },
+  {
+   "name": "zihadm559",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-30 17:14",
+   "last": "2026-10-30 17:14",
+   "served": []
+  },
+  {
+   "name": "felixlunar420",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfHNepgCE3x"
+   ],
+   "first": "2026-10-30 18:50",
+   "last": "2026-10-30 18:50",
+   "served": []
+  },
+  {
+   "name": "arsh.reddy",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfHNepgCE3x"
+   ],
+   "first": "2026-10-30 18:52",
+   "last": "2026-10-30 18:52",
+   "served": []
+  },
+  {
+   "name": "hugowong.w",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfHNepgCE3x"
+   ],
+   "first": "2026-10-30 18:58",
+   "last": "2026-10-30 18:58",
+   "served": []
+  },
+  {
+   "name": "sviatoslav46833",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-30 19:54",
+   "last": "2026-10-30 19:54",
    "served": []
   }
  ]
