@@ -1,18 +1,36 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.RAIL = {
- "updated": "2026-10-31 12:02",
+ "updated": "2026-10-31 17:02",
  "reel": "https://www.instagram.com/reel/DfI1K7NFd3Y/",
  "orders": [
   {
    "id": "18645146641017102",
    "username": "_oriental_bri",
    "text": "Add the antidote to the lethargy Happy soup and see what happens",
-   "likes": 3
+   "likes": 13
   },
   {
    "id": "18117420976823737",
    "username": "ivanov_a1112",
    "text": "Maybe it needs love 🥺",
+   "likes": 10
+  },
+  {
+   "id": "18089109812291497",
+   "username": "rents_incarnet",
+   "text": "add carolina reapers",
+   "likes": 3
+  },
+  {
+   "id": "18119832908047935",
+   "username": "cybersaurian",
+   "text": "1 day blinding stew",
+   "likes": 3
+  },
+  {
+   "id": "18080759744397943",
+   "username": "beexak",
+   "text": "How about liquid gold 🤔",
    "likes": 2
   },
   {
@@ -22,16 +40,16 @@ window.RAIL = {
    "likes": 2
   },
   {
-   "id": "18080759744397943",
-   "username": "beexak",
-   "text": "How about liquid gold 🤔",
-   "likes": 1
+   "id": "18052649432602917",
+   "username": "don.t_worr.y",
+   "text": "Eternal joint pain.",
+   "likes": 2
   },
   {
-   "id": "18089109812291497",
-   "username": "rents_incarnet",
-   "text": "add carolina reapers",
-   "likes": 1
+   "id": "18339163285258349",
+   "username": "p0lyophth4lm1a",
+   "text": "A chair",
+   "likes": 2
   }
  ]
 };

@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-10-31 12:02",
+ "updated": "2026-10-31 17:02",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -2826,6 +2826,72 @@ window.LEDGER = {
    ],
    "first": "2026-10-31 12:00",
    "last": "2026-10-31 12:00",
+   "served": []
+  },
+  {
+   "name": "don.t_worr.y",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfI1K7NFd3Y"
+   ],
+   "first": "2026-10-31 12:12",
+   "last": "2026-10-31 12:12",
+   "served": []
+  },
+  {
+   "name": "cybersaurian",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfI1K7NFd3Y"
+   ],
+   "first": "2026-10-31 12:30",
+   "last": "2026-10-31 12:30",
+   "served": []
+  },
+  {
+   "name": "p0lyophth4lm1a",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfI1K7NFd3Y"
+   ],
+   "first": "2026-10-31 12:32",
+   "last": "2026-10-31 12:32",
+   "served": []
+  },
+  {
+   "name": "_b_nerd_alli_",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfI1K7NFd3Y"
+   ],
+   "first": "2026-10-31 12:32",
+   "last": "2026-10-31 12:32",
+   "served": []
+  },
+  {
+   "name": "x_.yoshikage.kira._x",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfI1K7NFd3Y"
+   ],
+   "first": "2026-10-31 12:51",
+   "last": "2026-10-31 12:51",
+   "served": []
+  },
+  {
+   "name": "dark_wolfy36",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfI1K7NFd3Y"
+   ],
+   "first": "2026-10-31 13:02",
+   "last": "2026-10-31 13:02",
    "served": []
   }
  ]
