@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 자동 생성 파일(tools/build_site.py). 고치려면 tools/templates/dish.html과 data/dishes.json을 고친다 -->
+<title>Pot-au-Pot — ordered by @veryverysillyperson2, kar_der_las, daviemanuelanjos · stewpoly</title>
+<meta name="description" content="Pot-au-Pot, cooked in the stewpoly kitchen. Ordered by @veryverysillyperson2, kar_der_las, daviemanuelanjos.">
+<meta property="og:title" content="Pot-au-Pot — ordered by @veryverysillyperson2, kar_der_las, daviemanuelanjos">
+<meta property="og:description" content="A low-poly fantasy kitchen at night. See the menu and sign the ledger.">
+<meta property="og:image" content="https://stewpoly.github.io/img/cert/pot-au-pot.jpg">
+<meta property="og:url" content="https://stewpoly.github.io/d/pot-au-pot/">
+<meta name="theme-color" content="#120c1c">
+<link rel="icon" href="../../img/avatar.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{--night:#120c1c;--night2:#1b1229;--plum:#2a1d3d;--ink:#fff1dc;--dim:#cbb9d6;--fire:#ffb457;--fire2:#ffd68f;
+    --head:"Fredoka","Trebuchet MS",system-ui,sans-serif;--body:"Nunito",system-ui,sans-serif}
+  *{box-sizing:border-box;margin:0}
+  html{background:var(--night)}
+  body{color:var(--ink);font:400 17px/1.6 var(--body);overflow-x:hidden;-webkit-font-smoothing:antialiased;
+    background:linear-gradient(180deg,var(--night) 0,var(--night2) 60%,#150e21 100%);min-height:100vh}
+  body::after{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opacity:.3;transform:translateZ(0);background:url(../../img/paper.png) 0 0/256px 256px}
+  .wrap{max-width:980px;margin:0 auto;padding:22px 16px 60px;position:relative;isolation:isolate}
+  .wash{position:absolute;z-index:-1;pointer-events:none;width:760px;height:760px;left:50%;top:40px;margin-left:-380px;
+    background:url(../../img/wash_fire.png) center/contain no-repeat}
+  .back{display:inline-block;color:var(--fire2);font:600 .95rem var(--head);text-decoration:none}
+  .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;margin-top:24px}
+  .ph{position:relative;isolation:isolate;border-radius:24px}
+  .ph::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:24px;filter:url(#wc);transform:translateZ(0);
+    background:url(../../img/pot-au-pot.jpg) center/cover;box-shadow:0 0 0 3px rgba(255,214,143,.4),0 30px 60px rgba(0,0,0,.55)}
+  .ph{aspect-ratio:1}
+  .kicker{color:var(--fire);font:600 .85rem var(--head);letter-spacing:.2em;text-transform:uppercase}
+  h1{font:600 clamp(2.2rem,6vw,3.4rem)/1.05 var(--head);margin-top:8px}
+  .by{color:var(--fire2);font-weight:700;margin-top:10px;font-size:1.1rem}
+  .note{color:var(--dim);margin-top:12px;font-weight:600}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .tags span{font-size:.84rem;padding:3px 12px;border:2px solid rgba(255,214,143,.45);border-radius:99px;font-weight:600}
+  .cert{margin-top:70px;display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center}
+  .cert img{width:min(280px,70vw);display:block;border-radius:14px;box-shadow:0 24px 50px rgba(0,0,0,.5)}
+  .cert h2{font:600 clamp(1.6rem,4vw,2.2rem)/1.15 var(--head)}
+  .cert p{color:var(--dim);margin-top:10px;font-weight:600}
+  .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+  .btn{position:relative;isolation:isolate;display:inline-flex;align-items:center;padding:12px 24px;border-radius:99px;font:600 1rem var(--head);
+    text-decoration:none;color:#2b160a;transition:transform .15s}
+  .btn::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;filter:url(#wc);transform:translateZ(0);
+    background:linear-gradient(#ffd68f,#f0a54d);box-shadow:0 5px 0 #8a5522,inset 0 -6px 10px rgba(180,90,20,.35)}
+  .btn:hover{transform:translateY(3px)}
+  .btn.ghost{color:var(--fire2)}
+  .btn.ghost::before{background:rgba(42,29,61,.75);box-shadow:inset 0 0 0 2px rgba(255,214,143,.5)}
+  @media (max-width:760px){.grid,.cert{grid-template-columns:1fr}.cert img{margin:0 auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="wc" x="-6%" y="-6%" width="112%" height="112%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="4" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/>
+    <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="9" result="g"/>
+    <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 1.25" result="ga"/>
+    <feComposite in="d" in2="ga" operator="arithmetic" k1="0.18" k2="0.82" k3="0" k4="0"/>
+  </filter>
+</svg>
+<div class="wrap">
+  <div class="wash"></div>
+  <a class="back" href="../../menu/">← stewpoly menu</a>
+  <div class="grid">
+    <div class="ph" role="img" aria-label="Pot-au-Pot"></div>
+    <div>
+      <div class="kicker">Order No. 0040 · 2026-10-30</div>
+      <h1>Pot-au-Pot</h1>
+      <div class="by">Ordered by @veryverysillyperson2, kar_der_las, daviemanuelanjos</div>
+      <p class="note">A pot, fed itself from a parallel dimension. It serves itself. It&#x27;s pots all the way down.</p>
+      <div class="tags"><span>copper pot</span><span>teal parallel-dimension pot</span><span>stirred-backwards broth</span></div>
+      <div class="btns"><a class="btn" href="https://www.instagram.com/reel/DfHNepgCE3x/" target="_blank" rel="noopener">Watch it cooked</a><a class="btn ghost" href="../../#ledger">Open the ledger</a></div>
+    </div>
+  </div>
+  <section class="cert">
+    <img src="../../img/cert/pot-au-pot.jpg" alt="Order served certificate for Pot-au-Pot" loading="lazy">
+    <div>
+      <div class="kicker">For the one who ordered it</div>
+      <h2>Your order, served.</h2>
+      <p>Save this card and post it to your story. Tag @stewpoly so we can see it.</p>
+      <div class="btns"><a class="btn" href="../../img/cert/pot-au-pot.jpg" download="stewpoly-pot-au-pot.jpg">Save the card</a></div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

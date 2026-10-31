@@ -1,6 +1,38 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.DISHES = [
  {
+  "slug": "lethally-happy-soup",
+  "name": "Lethally Happy Soup",
+  "note": "Deadly lethal poison, plus pure happiness. It's thrilled. It's still lethal. It's dinner.",
+  "ingredients": [
+   "deadly lethal poison",
+   "pure happiness",
+   "cork-popped broth"
+  ],
+  "orderedBy": "",
+  "requester": "arsh.reddy, felixlunar420",
+  "date": "2026-10-31",
+  "image": "img/lethally-happy-soup.jpg",
+  "reel": "https://www.instagram.com/reel/DfI1K7NFd3Y/",
+  "by": "@arsh.reddy, felixlunar420"
+ },
+ {
+  "slug": "pot-au-pot",
+  "name": "Pot-au-Pot",
+  "note": "A pot, fed itself from a parallel dimension. It serves itself. It's pots all the way down.",
+  "ingredients": [
+   "copper pot",
+   "teal parallel-dimension pot",
+   "stirred-backwards broth"
+  ],
+  "orderedBy": "",
+  "requester": "veryverysillyperson2, kar_der_las, daviemanuelanjos",
+  "date": "2026-10-30",
+  "image": "img/pot-au-pot.jpg",
+  "reel": "https://www.instagram.com/reel/DfHNepgCE3x/",
+  "by": "@veryverysillyperson2, kar_der_las, daviemanuelanjos"
+ },
+ {
   "slug": "teeth-apple-pie",
   "name": "Apple Pie, with lots of teeth",
   "note": "Five toothy apples, one flaky crust. The pie bites back.",
