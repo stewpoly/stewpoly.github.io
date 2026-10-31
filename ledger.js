@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-10-31 09:07",
+ "updated": "2026-10-31 12:02",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -36,6 +36,11 @@ window.LEDGER = {
    "code": "DfHNepgCE3x",
    "label": "Pot-au-Pot",
    "url": "https://www.instagram.com/reel/DfHNepgCE3x/"
+  },
+  {
+   "code": "DfI1K7NFd3Y",
+   "label": "Lethally Happy Soup",
+   "url": "https://www.instagram.com/reel/DfI1K7NFd3Y/"
   }
  ],
  "guests": [
@@ -74,6 +79,19 @@ window.LEDGER = {
    ]
   },
   {
+   "name": "ivanov_a1112",
+   "visits": 3,
+   "comments": 3,
+   "reels": [
+    "De87Vmwx57c",
+    "De_g8UxEXmb",
+    "DfI1K7NFd3Y"
+   ],
+   "first": "2026-10-26 21:15",
+   "last": "2026-10-31 09:14",
+   "served": []
+  },
+  {
    "name": "nobody0fnowhere2024",
    "visits": 3,
    "comments": 3,
@@ -97,18 +115,6 @@ window.LEDGER = {
    ],
    "first": "2026-10-28 12:56",
    "last": "2026-10-30 14:24",
-   "served": []
-  },
-  {
-   "name": "ivanov_a1112",
-   "visits": 2,
-   "comments": 2,
-   "reels": [
-    "De87Vmwx57c",
-    "De_g8UxEXmb"
-   ],
-   "first": "2026-10-26 21:15",
-   "last": "2026-10-27 21:40",
    "served": []
   },
   {
@@ -268,6 +274,18 @@ window.LEDGER = {
    "served": []
   },
   {
+   "name": "battery_eater124453",
+   "visits": 2,
+   "comments": 2,
+   "reels": [
+    "DfEorp2ACLx",
+    "DfI1K7NFd3Y"
+   ],
+   "first": "2026-10-29 22:41",
+   "last": "2026-10-31 10:02",
+   "served": []
+  },
+  {
    "name": "deadstarkitt",
    "visits": 2,
    "comments": 2,
@@ -277,6 +295,18 @@ window.LEDGER = {
    ],
    "first": "2026-10-31 00:12",
    "last": "2026-10-31 00:13",
+   "served": []
+  },
+  {
+   "name": "beexak",
+   "visits": 2,
+   "comments": 2,
+   "reels": [
+    "DfCD5IciiIx",
+    "DfI1K7NFd3Y"
+   ],
+   "first": "2026-10-31 09:42",
+   "last": "2026-10-31 09:44",
    "served": []
   },
   {
@@ -2634,17 +2664,6 @@ window.LEDGER = {
    "served": []
   },
   {
-   "name": "battery_eater124453",
-   "visits": 1,
-   "comments": 1,
-   "reels": [
-    "DfEorp2ACLx"
-   ],
-   "first": "2026-10-29 22:41",
-   "last": "2026-10-29 22:41",
-   "served": []
-  },
-  {
    "name": "miamarzec8",
    "visits": 1,
    "comments": 1,
@@ -2774,6 +2793,39 @@ window.LEDGER = {
    ],
    "first": "2026-10-31 02:58",
    "last": "2026-10-31 02:58",
+   "served": []
+  },
+  {
+   "name": "peyton31294",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfHNepgCE3x"
+   ],
+   "first": "2026-10-31 09:12",
+   "last": "2026-10-31 09:12",
+   "served": []
+  },
+  {
+   "name": "_oriental_bri",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfI1K7NFd3Y"
+   ],
+   "first": "2026-10-31 10:04",
+   "last": "2026-10-31 10:04",
+   "served": []
+  },
+  {
+   "name": "rents_incarnet",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfI1K7NFd3Y"
+   ],
+   "first": "2026-10-31 12:00",
+   "last": "2026-10-31 12:00",
    "served": []
   }
  ]
