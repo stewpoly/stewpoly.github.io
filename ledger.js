@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-10-31 22:02",
+ "updated": "2026-11-01 07:02",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -307,6 +307,18 @@ window.LEDGER = {
    ],
    "first": "2026-10-31 09:42",
    "last": "2026-10-31 09:44",
+   "served": []
+  },
+  {
+   "name": "_oriental_bri",
+   "visits": 2,
+   "comments": 2,
+   "reels": [
+    "DfI1K7NFd3Y",
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-10-31 10:04",
+   "last": "2026-11-01 03:13",
    "served": []
   },
   {
@@ -2807,17 +2819,6 @@ window.LEDGER = {
    "served": []
   },
   {
-   "name": "_oriental_bri",
-   "visits": 1,
-   "comments": 1,
-   "reels": [
-    "DfI1K7NFd3Y"
-   ],
-   "first": "2026-10-31 10:04",
-   "last": "2026-10-31 10:04",
-   "served": []
-  },
-  {
    "name": "rents_incarnet",
    "visits": 1,
    "comments": 1,
@@ -2892,6 +2893,28 @@ window.LEDGER = {
    ],
    "first": "2026-10-31 13:02",
    "last": "2026-10-31 13:02",
+   "served": []
+  },
+  {
+   "name": "marcomikharod",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "De_g8UxEXmb"
+   ],
+   "first": "2026-11-01 00:09",
+   "last": "2026-11-01 00:09",
+   "served": []
+  },
+  {
+   "name": "n3onfragon",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfI1K7NFd3Y"
+   ],
+   "first": "2026-11-01 03:14",
+   "last": "2026-11-01 03:14",
    "served": []
   }
  ]
