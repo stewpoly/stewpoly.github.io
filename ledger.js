@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-11-01 22:01",
+ "updated": "2026-11-02 07:01",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -46,20 +46,26 @@ window.LEDGER = {
    "code": "DfMeWrKDhQ9",
    "label": "Reel 9",
    "url": "https://www.instagram.com/reel/DfMeWrKDhQ9/"
+  },
+  {
+   "code": "DfNtscTj2m4",
+   "label": "Reel 10",
+   "url": "https://www.instagram.com/reel/DfNtscTj2m4/"
   }
  ],
  "guests": [
   {
    "name": "the.cyber.cypher",
-   "visits": 3,
-   "comments": 3,
+   "visits": 4,
+   "comments": 4,
    "reels": [
     "De87Vmwx57c",
     "De-oCMKk0Yt",
-    "DfA5W-OFogx"
+    "DfA5W-OFogx",
+    "DfMeWrKDhQ9"
    ],
    "first": "2026-10-26 22:10",
-   "last": "2026-10-28 07:58",
+   "last": "2026-11-01 22:58",
    "served": [
     {
      "name": "Apple Pie, with lots of teeth",
@@ -338,6 +344,18 @@ window.LEDGER = {
    ],
    "first": "2026-10-31 12:32",
    "last": "2026-11-01 20:24",
+   "served": []
+  },
+  {
+   "name": "wildperune",
+   "visits": 2,
+   "comments": 2,
+   "reels": [
+    "DfMeWrKDhQ9",
+    "DfNtscTj2m4"
+   ],
+   "first": "2026-11-01 22:51",
+   "last": "2026-11-02 06:49",
    "served": []
   },
   {
@@ -2945,6 +2963,39 @@ window.LEDGER = {
    ],
    "first": "2026-11-01 20:06",
    "last": "2026-11-01 20:06",
+   "served": []
+  },
+  {
+   "name": "janelleyay",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfMeWrKDhQ9"
+   ],
+   "first": "2026-11-01 22:37",
+   "last": "2026-11-01 22:37",
+   "served": []
+  },
+  {
+   "name": "musiclv6",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfMeWrKDhQ9"
+   ],
+   "first": "2026-11-02 00:49",
+   "last": "2026-11-02 00:49",
+   "served": []
+  },
+  {
+   "name": "thelion15_",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfMeWrKDhQ9"
+   ],
+   "first": "2026-11-02 01:28",
+   "last": "2026-11-02 01:28",
    "served": []
   }
  ]
