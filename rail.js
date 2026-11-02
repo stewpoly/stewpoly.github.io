@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.RAIL = {
- "updated": "2026-11-02 17:01",
+ "updated": "2026-11-02 22:01",
  "reel": "https://www.instagram.com/reel/DfNtscTj2m4/",
  "orders": [
   {
@@ -16,6 +16,12 @@ window.RAIL = {
    "likes": 2
   },
   {
+   "id": "17923367385446653",
+   "username": "wawasiriudomsart_yy13",
+   "text": "Cloud pizza pls",
+   "likes": 2
+  },
+  {
    "id": "18603909865064047",
    "username": "vxncaaa",
    "text": "Bryndzove halušky now",
@@ -28,21 +34,21 @@ window.RAIL = {
    "likes": 1
   },
   {
-   "id": "17923367385446653",
-   "username": "wawasiriudomsart_yy13",
-   "text": "Cloud pizza pls",
-   "likes": 1
-  },
-  {
    "id": "17867815350680162",
    "username": "lovel_ykat1",
    "text": "Can I get a strawberry on my pizza but with strawbery sirope and nutella 🩷🍓😗",
-   "likes": 0
+   "likes": 1
   },
   {
    "id": "18123067325291863",
    "username": "veryverysillyperson2",
    "text": "a singular big grape the size of a watermelon. make it extra crunchy",
+   "likes": 1
+  },
+  {
+   "id": "18024837818712060",
+   "username": "battery_eater124453",
+   "text": "Add a partical accelator",
    "likes": 0
   }
  ]
