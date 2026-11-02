@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-11-02 07:01",
+ "updated": "2026-11-02 12:01",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -2996,6 +2996,61 @@ window.LEDGER = {
    ],
    "first": "2026-11-02 01:28",
    "last": "2026-11-02 01:28",
+   "served": []
+  },
+  {
+   "name": "_exotic.pokiee",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfNtscTj2m4"
+   ],
+   "first": "2026-11-02 07:38",
+   "last": "2026-11-02 07:38",
+   "served": []
+  },
+  {
+   "name": "vxncaaa",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfNtscTj2m4"
+   ],
+   "first": "2026-11-02 08:11",
+   "last": "2026-11-02 08:11",
+   "served": []
+  },
+  {
+   "name": "unknown_princesslizz",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfNtscTj2m4"
+   ],
+   "first": "2026-11-02 09:19",
+   "last": "2026-11-02 09:19",
+   "served": []
+  },
+  {
+   "name": "wawasiriudomsart_yy13",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfNtscTj2m4"
+   ],
+   "first": "2026-11-02 09:26",
+   "last": "2026-11-02 09:26",
+   "served": []
+  },
+  {
+   "name": "lovel_ykat1",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfNtscTj2m4"
+   ],
+   "first": "2026-11-02 09:35",
+   "last": "2026-11-02 09:35",
    "served": []
   }
  ]
