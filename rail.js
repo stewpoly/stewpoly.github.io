@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.RAIL = {
- "updated": "2026-11-03 12:01",
+ "updated": "2026-11-03 17:01",
  "reel": "https://www.instagram.com/reel/DfNtscTj2m4/",
  "orders": [
   {
@@ -49,7 +49,7 @@ window.RAIL = {
    "id": "18024837818712060",
    "username": "battery_eater124453",
    "text": "Add a partical accelator",
-   "likes": 0
+   "likes": 1
   }
  ]
 };
