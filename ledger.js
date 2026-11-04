@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-11-04 22:00",
+ "updated": "2026-11-05 07:01",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -56,6 +56,11 @@ window.LEDGER = {
    "code": "DfS2t-bjve4",
    "label": "Reel 11",
    "url": "https://www.instagram.com/reel/DfS2t-bjve4/"
+  },
+  {
+   "code": "DfVcbLzjycI",
+   "label": "Reel 12",
+   "url": "https://www.instagram.com/reel/DfVcbLzjycI/"
   }
  ],
  "guests": [
@@ -124,6 +129,20 @@ window.LEDGER = {
    "served": []
   },
   {
+   "name": "wildperune",
+   "visits": 4,
+   "comments": 4,
+   "reels": [
+    "DfMeWrKDhQ9",
+    "DfNtscTj2m4",
+    "DfS2t-bjve4",
+    "DfVcbLzjycI"
+   ],
+   "first": "2026-11-01 22:51",
+   "last": "2026-11-05 06:58",
+   "served": []
+  },
+  {
    "name": "ivanov_a1112",
    "visits": 3,
    "comments": 3,
@@ -160,19 +179,6 @@ window.LEDGER = {
    ],
    "first": "2026-10-28 12:56",
    "last": "2026-10-30 14:24",
-   "served": []
-  },
-  {
-   "name": "wildperune",
-   "visits": 3,
-   "comments": 3,
-   "reels": [
-    "DfMeWrKDhQ9",
-    "DfNtscTj2m4",
-    "DfS2t-bjve4"
-   ],
-   "first": "2026-11-01 22:51",
-   "last": "2026-11-04 07:36",
    "served": []
   },
   {
@@ -377,6 +383,18 @@ window.LEDGER = {
    ],
    "first": "2026-10-31 12:32",
    "last": "2026-11-01 20:24",
+   "served": []
+  },
+  {
+   "name": "m3m3nt0xm0r1",
+   "visits": 2,
+   "comments": 2,
+   "reels": [
+    "DfS2t-bjve4",
+    "DfVcbLzjycI"
+   ],
+   "first": "2026-11-04 08:32",
+   "last": "2026-11-05 06:51",
    "served": []
   },
   {
@@ -3064,14 +3082,14 @@ window.LEDGER = {
    "served": []
   },
   {
-   "name": "m3m3nt0xm0r1",
+   "name": "gerson_deltarun3",
    "visits": 1,
    "comments": 1,
    "reels": [
     "DfS2t-bjve4"
    ],
-   "first": "2026-11-04 08:32",
-   "last": "2026-11-04 08:32",
+   "first": "2026-11-05 03:59",
+   "last": "2026-11-05 03:59",
    "served": []
   }
  ]
