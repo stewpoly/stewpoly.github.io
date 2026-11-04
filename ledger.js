@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-11-04 17:00",
+ "updated": "2026-11-04 22:00",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -95,6 +95,21 @@ window.LEDGER = {
    ]
   },
   {
+   "name": "battery_eater124453",
+   "visits": 5,
+   "comments": 5,
+   "reels": [
+    "DfEorp2ACLx",
+    "DfI1K7NFd3Y",
+    "DfMeWrKDhQ9",
+    "DfNtscTj2m4",
+    "DfS2t-bjve4"
+   ],
+   "first": "2026-10-29 22:41",
+   "last": "2026-11-04 18:39",
+   "served": []
+  },
+  {
    "name": "veryverysillyperson2",
    "visits": 4,
    "comments": 4,
@@ -106,20 +121,6 @@ window.LEDGER = {
    ],
    "first": "2026-10-27 18:43",
    "last": "2026-11-02 14:38",
-   "served": []
-  },
-  {
-   "name": "battery_eater124453",
-   "visits": 4,
-   "comments": 4,
-   "reels": [
-    "DfEorp2ACLx",
-    "DfI1K7NFd3Y",
-    "DfMeWrKDhQ9",
-    "DfNtscTj2m4"
-   ],
-   "first": "2026-10-29 22:41",
-   "last": "2026-11-02 21:53",
    "served": []
   },
   {
