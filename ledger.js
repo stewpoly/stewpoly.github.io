@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-11-05 07:01",
+ "updated": "2026-11-05 12:01",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -101,17 +101,18 @@ window.LEDGER = {
   },
   {
    "name": "battery_eater124453",
-   "visits": 5,
-   "comments": 5,
+   "visits": 6,
+   "comments": 6,
    "reels": [
     "DfEorp2ACLx",
     "DfI1K7NFd3Y",
     "DfMeWrKDhQ9",
     "DfNtscTj2m4",
-    "DfS2t-bjve4"
+    "DfS2t-bjve4",
+    "DfVcbLzjycI"
    ],
    "first": "2026-10-29 22:41",
-   "last": "2026-11-04 18:39",
+   "last": "2026-11-05 10:32",
    "served": []
   },
   {
@@ -203,6 +204,18 @@ window.LEDGER = {
    ],
    "first": "2026-10-26 22:17",
    "last": "2026-11-03 12:51",
+   "served": []
+  },
+  {
+   "name": "anairay_krystal",
+   "visits": 2,
+   "comments": 2,
+   "reels": [
+    "De87Vmwx57c",
+    "DfVcbLzjycI"
+   ],
+   "first": "2026-10-26 23:56",
+   "last": "2026-11-05 09:09",
    "served": []
   },
   {
@@ -516,17 +529,6 @@ window.LEDGER = {
    ],
    "first": "2026-10-26 23:38",
    "last": "2026-10-26 23:38",
-   "served": []
-  },
-  {
-   "name": "anairay_krystal",
-   "visits": 1,
-   "comments": 1,
-   "reels": [
-    "De87Vmwx57c"
-   ],
-   "first": "2026-10-26 23:56",
-   "last": "2026-10-26 23:56",
    "served": []
   },
   {
