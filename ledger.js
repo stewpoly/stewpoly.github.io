@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-11-05 22:00",
+ "updated": "2026-11-06 07:00",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -61,6 +61,11 @@ window.LEDGER = {
    "code": "DfVcbLzjycI",
    "label": "Reel 12",
    "url": "https://www.instagram.com/reel/DfVcbLzjycI/"
+  },
+  {
+   "code": "DfYCIo8nLRd",
+   "label": "Reel 13",
+   "url": "https://www.instagram.com/reel/DfYCIo8nLRd/"
   }
  ],
  "guests": [
@@ -408,6 +413,18 @@ window.LEDGER = {
    ],
    "first": "2026-11-04 08:32",
    "last": "2026-11-05 06:51",
+   "served": []
+  },
+  {
+   "name": "gerson_deltarun3",
+   "visits": 2,
+   "comments": 2,
+   "reels": [
+    "DfS2t-bjve4",
+    "DfVcbLzjycI"
+   ],
+   "first": "2026-11-05 03:59",
+   "last": "2026-11-06 05:26",
    "served": []
   },
   {
@@ -3081,17 +3098,6 @@ window.LEDGER = {
    ],
    "first": "2026-11-02 09:35",
    "last": "2026-11-02 09:35",
-   "served": []
-  },
-  {
-   "name": "gerson_deltarun3",
-   "visits": 1,
-   "comments": 1,
-   "reels": [
-    "DfS2t-bjve4"
-   ],
-   "first": "2026-11-05 03:59",
-   "last": "2026-11-05 03:59",
    "served": []
   },
   {
