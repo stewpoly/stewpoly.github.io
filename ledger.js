@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-11-06 07:00",
+ "updated": "2026-11-06 12:00",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -106,18 +106,34 @@ window.LEDGER = {
   },
   {
    "name": "battery_eater124453",
-   "visits": 6,
-   "comments": 6,
+   "visits": 7,
+   "comments": 7,
    "reels": [
     "DfEorp2ACLx",
     "DfI1K7NFd3Y",
     "DfMeWrKDhQ9",
     "DfNtscTj2m4",
     "DfS2t-bjve4",
-    "DfVcbLzjycI"
+    "DfVcbLzjycI",
+    "DfYCIo8nLRd"
    ],
    "first": "2026-10-29 22:41",
-   "last": "2026-11-05 10:32",
+   "last": "2026-11-06 10:32",
+   "served": []
+  },
+  {
+   "name": "wildperune",
+   "visits": 5,
+   "comments": 5,
+   "reels": [
+    "DfMeWrKDhQ9",
+    "DfNtscTj2m4",
+    "DfS2t-bjve4",
+    "DfVcbLzjycI",
+    "DfYCIo8nLRd"
+   ],
+   "first": "2026-11-01 22:51",
+   "last": "2026-11-06 10:55",
    "served": []
   },
   {
@@ -132,20 +148,6 @@ window.LEDGER = {
    ],
    "first": "2026-10-27 18:43",
    "last": "2026-11-02 14:38",
-   "served": []
-  },
-  {
-   "name": "wildperune",
-   "visits": 4,
-   "comments": 4,
-   "reels": [
-    "DfMeWrKDhQ9",
-    "DfNtscTj2m4",
-    "DfS2t-bjve4",
-    "DfVcbLzjycI"
-   ],
-   "first": "2026-11-01 22:51",
-   "last": "2026-11-05 06:58",
    "served": []
   },
   {
@@ -185,6 +187,19 @@ window.LEDGER = {
    ],
    "first": "2026-10-28 12:56",
    "last": "2026-10-30 14:24",
+   "served": []
+  },
+  {
+   "name": "_oriental_bri",
+   "visits": 3,
+   "comments": 3,
+   "reels": [
+    "DfI1K7NFd3Y",
+    "De_g8UxEXmb",
+    "DfYCIo8nLRd"
+   ],
+   "first": "2026-10-31 10:04",
+   "last": "2026-11-06 10:52",
    "served": []
   },
   {
@@ -377,18 +392,6 @@ window.LEDGER = {
    ],
    "first": "2026-10-31 09:42",
    "last": "2026-10-31 09:44",
-   "served": []
-  },
-  {
-   "name": "_oriental_bri",
-   "visits": 2,
-   "comments": 2,
-   "reels": [
-    "DfI1K7NFd3Y",
-    "De_g8UxEXmb"
-   ],
-   "first": "2026-10-31 10:04",
-   "last": "2026-11-01 03:13",
    "served": []
   },
   {
