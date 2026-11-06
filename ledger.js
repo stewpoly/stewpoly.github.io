@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-11-06 22:01",
+ "updated": "2026-11-07 07:01",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -3112,6 +3112,17 @@ window.LEDGER = {
    ],
    "first": "2026-11-05 14:32",
    "last": "2026-11-05 14:32",
+   "served": []
+  },
+  {
+   "name": "itskavika",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfYCIo8nLRd"
+   ],
+   "first": "2026-11-06 22:42",
+   "last": "2026-11-06 22:42",
    "served": []
   }
  ]
