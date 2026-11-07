@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-11-07 07:01",
+ "updated": "2026-11-07 12:12",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -66,6 +66,11 @@ window.LEDGER = {
    "code": "DfYCIo8nLRd",
    "label": "Reel 13",
    "url": "https://www.instagram.com/reel/DfYCIo8nLRd/"
+  },
+  {
+   "code": "Dfa2KmzD9Mg",
+   "label": "Reel 14",
+   "url": "https://www.instagram.com/reel/Dfa2KmzD9Mg/"
   }
  ],
  "guests": [
