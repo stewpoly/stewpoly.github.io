@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-11-08 07:00",
+ "updated": "2026-11-08 12:00",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -71,6 +71,11 @@ window.LEDGER = {
    "code": "Dfa2KmzD9Mg",
    "label": "Reel 14",
    "url": "https://www.instagram.com/reel/Dfa2KmzD9Mg/"
+  },
+  {
+   "code": "DfdcybyHBTV",
+   "label": "Reel 15",
+   "url": "https://www.instagram.com/reel/DfdcybyHBTV/"
   }
  ],
  "guests": [
@@ -129,17 +134,32 @@ window.LEDGER = {
   },
   {
    "name": "wildperune",
-   "visits": 5,
-   "comments": 5,
+   "visits": 6,
+   "comments": 6,
    "reels": [
     "DfMeWrKDhQ9",
     "DfNtscTj2m4",
     "DfS2t-bjve4",
     "DfVcbLzjycI",
-    "DfYCIo8nLRd"
+    "DfYCIo8nLRd",
+    "DfdcybyHBTV"
    ],
    "first": "2026-11-01 22:51",
-   "last": "2026-11-06 10:55",
+   "last": "2026-11-08 09:24",
+   "served": []
+  },
+  {
+   "name": "ivanov_a1112",
+   "visits": 4,
+   "comments": 4,
+   "reels": [
+    "De87Vmwx57c",
+    "De_g8UxEXmb",
+    "DfI1K7NFd3Y",
+    "DfdcybyHBTV"
+   ],
+   "first": "2026-10-26 21:15",
+   "last": "2026-11-08 11:20",
    "served": []
   },
   {
@@ -154,19 +174,6 @@ window.LEDGER = {
    ],
    "first": "2026-10-27 18:43",
    "last": "2026-11-02 14:38",
-   "served": []
-  },
-  {
-   "name": "ivanov_a1112",
-   "visits": 3,
-   "comments": 3,
-   "reels": [
-    "De87Vmwx57c",
-    "De_g8UxEXmb",
-    "DfI1K7NFd3Y"
-   ],
-   "first": "2026-10-26 21:15",
-   "last": "2026-10-31 09:14",
    "served": []
   },
   {
@@ -242,6 +249,18 @@ window.LEDGER = {
    ],
    "first": "2026-10-26 23:56",
    "last": "2026-11-05 09:09",
+   "served": []
+  },
+  {
+   "name": "majesticme201",
+   "visits": 2,
+   "comments": 2,
+   "reels": [
+    "De87Vmwx57c",
+    "DfdcybyHBTV"
+   ],
+   "first": "2026-10-27 01:48",
+   "last": "2026-11-08 09:45",
    "served": []
   },
   {
@@ -567,17 +586,6 @@ window.LEDGER = {
    ],
    "first": "2026-10-26 23:38",
    "last": "2026-10-26 23:38",
-   "served": []
-  },
-  {
-   "name": "majesticme201",
-   "visits": 1,
-   "comments": 1,
-   "reels": [
-    "De87Vmwx57c"
-   ],
-   "first": "2026-10-27 01:48",
-   "last": "2026-10-27 01:48",
    "served": []
   },
   {

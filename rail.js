@@ -1,24 +1,24 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.RAIL = {
- "updated": "2026-11-08 07:00",
- "reel": "https://www.instagram.com/reel/Dfa2KmzD9Mg/",
+ "updated": "2026-11-08 12:00",
+ "reel": "https://www.instagram.com/reel/DfdcybyHBTV/",
  "orders": [
   {
-   "id": "18129706213886480",
-   "username": "mistabsolute",
-   "text": "Can i have a slice of banana dense enough for it to be radioactive",
-   "likes": 2
-  },
-  {
-   "id": "17913094527590844",
-   "username": "itskavika",
-   "text": "Can I have a giant brownie in the shape of letter the letter A 😝🤨. Bubbling with life 😈",
+   "id": "18179660761446243",
+   "username": "wildperune",
+   "text": "Poifect",
    "likes": 1
   },
   {
-   "id": "18337525318263688",
-   "username": "battery_eater124453",
-   "text": "Yay thx",
+   "id": "18139654150649297",
+   "username": "majesticme201",
+   "text": "Dumplings",
+   "likes": 1
+  },
+  {
+   "id": "17952898803302707",
+   "username": "ivanov_a1112",
+   "text": "Bao with sharks 👍 and fried rice",
    "likes": 1
   }
  ]
