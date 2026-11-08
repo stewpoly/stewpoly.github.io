@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-11-08 12:00",
+ "updated": "2026-11-08 17:00",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -76,6 +76,11 @@ window.LEDGER = {
    "code": "DfdcybyHBTV",
    "label": "Reel 15",
    "url": "https://www.instagram.com/reel/DfdcybyHBTV/"
+  },
+  {
+   "code": "DfeOGcjAiMt",
+   "label": "Reel 16",
+   "url": "https://www.instagram.com/reel/DfeOGcjAiMt/"
   }
  ],
  "guests": [
@@ -133,6 +138,22 @@ window.LEDGER = {
    "served": []
   },
   {
+   "name": "veryverysillyperson2",
+   "visits": 6,
+   "comments": 6,
+   "reels": [
+    "De_g8UxEXmb",
+    "DfCD5IciiIx",
+    "DfMeWrKDhQ9",
+    "DfNtscTj2m4",
+    "DfdcybyHBTV",
+    "DfeOGcjAiMt"
+   ],
+   "first": "2026-10-27 18:43",
+   "last": "2026-11-08 16:52",
+   "served": []
+  },
+  {
    "name": "wildperune",
    "visits": 6,
    "comments": 6,
@@ -163,17 +184,16 @@ window.LEDGER = {
    "served": []
   },
   {
-   "name": "veryverysillyperson2",
-   "visits": 4,
-   "comments": 4,
+   "name": "polymercreek",
+   "visits": 3,
+   "comments": 3,
    "reels": [
-    "De_g8UxEXmb",
-    "DfCD5IciiIx",
-    "DfMeWrKDhQ9",
-    "DfNtscTj2m4"
+    "De87Vmwx57c",
+    "DfNtscTj2m4",
+    "DfdcybyHBTV"
    ],
-   "first": "2026-10-27 18:43",
-   "last": "2026-11-02 14:38",
+   "first": "2026-10-26 22:17",
+   "last": "2026-11-08 12:04",
    "served": []
   },
   {
@@ -216,6 +236,19 @@ window.LEDGER = {
    "served": []
   },
   {
+   "name": "itskavika",
+   "visits": 3,
+   "comments": 3,
+   "reels": [
+    "DfYCIo8nLRd",
+    "Dfa2KmzD9Mg",
+    "DfdcybyHBTV"
+   ],
+   "first": "2026-11-06 22:42",
+   "last": "2026-11-08 12:50",
+   "served": []
+  },
+  {
    "name": "sarahgraygravy",
    "visits": 2,
    "comments": 2,
@@ -225,18 +258,6 @@ window.LEDGER = {
    ],
    "first": "2026-10-26 21:17",
    "last": "2026-10-28 14:22",
-   "served": []
-  },
-  {
-   "name": "polymercreek",
-   "visits": 2,
-   "comments": 2,
-   "reels": [
-    "De87Vmwx57c",
-    "DfNtscTj2m4"
-   ],
-   "first": "2026-10-26 22:17",
-   "last": "2026-11-03 12:51",
    "served": []
   },
   {
@@ -453,18 +474,6 @@ window.LEDGER = {
    ],
    "first": "2026-11-05 03:59",
    "last": "2026-11-06 05:26",
-   "served": []
-  },
-  {
-   "name": "itskavika",
-   "visits": 2,
-   "comments": 2,
-   "reels": [
-    "DfYCIo8nLRd",
-    "Dfa2KmzD9Mg"
-   ],
-   "first": "2026-11-06 22:42",
-   "last": "2026-11-07 16:20",
    "served": []
   },
   {
