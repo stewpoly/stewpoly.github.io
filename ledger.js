@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-11-08 17:00",
+ "updated": "2026-11-08 22:00",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -184,6 +184,20 @@ window.LEDGER = {
    "served": []
   },
   {
+   "name": "itskavika",
+   "visits": 4,
+   "comments": 4,
+   "reels": [
+    "DfYCIo8nLRd",
+    "Dfa2KmzD9Mg",
+    "DfdcybyHBTV",
+    "DfeOGcjAiMt"
+   ],
+   "first": "2026-11-06 22:42",
+   "last": "2026-11-08 17:46",
+   "served": []
+  },
+  {
    "name": "polymercreek",
    "visits": 3,
    "comments": 3,
@@ -233,19 +247,6 @@ window.LEDGER = {
    ],
    "first": "2026-10-31 10:04",
    "last": "2026-11-06 10:52",
-   "served": []
-  },
-  {
-   "name": "itskavika",
-   "visits": 3,
-   "comments": 3,
-   "reels": [
-    "DfYCIo8nLRd",
-    "Dfa2KmzD9Mg",
-    "DfdcybyHBTV"
-   ],
-   "first": "2026-11-06 22:42",
-   "last": "2026-11-08 12:50",
    "served": []
   },
   {
@@ -3158,6 +3159,17 @@ window.LEDGER = {
    ],
    "first": "2026-11-08 02:19",
    "last": "2026-11-08 02:19",
+   "served": []
+  },
+  {
+   "name": "artratisonline",
+   "visits": 1,
+   "comments": 1,
+   "reels": [
+    "DfeOGcjAiMt"
+   ],
+   "first": "2026-11-08 19:00",
+   "last": "2026-11-08 19:00",
    "served": []
   }
  ]
