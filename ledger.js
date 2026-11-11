@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.LEDGER = {
- "updated": "2026-11-11 12:00",
+ "updated": "2026-11-11 17:00",
  "reels": [
   {
    "code": "De87Vmwx57c",
@@ -86,6 +86,11 @@ window.LEDGER = {
    "code": "Dffnl6rHMCH",
    "label": "Reel 17",
    "url": "https://www.instagram.com/reel/Dffnl6rHMCH/"
+  },
+  {
+   "code": "DflvBufDDwJ",
+   "label": "Reel 18",
+   "url": "https://www.instagram.com/reel/DflvBufDDwJ/"
   }
  ],
  "guests": [
@@ -176,17 +181,18 @@ window.LEDGER = {
   },
   {
    "name": "itskavika",
-   "visits": 5,
-   "comments": 5,
+   "visits": 6,
+   "comments": 6,
    "reels": [
     "DfYCIo8nLRd",
     "Dfa2KmzD9Mg",
     "DfdcybyHBTV",
     "DfeOGcjAiMt",
-    "Dffnl6rHMCH"
+    "Dffnl6rHMCH",
+    "DflvBufDDwJ"
    ],
    "first": "2026-11-06 22:42",
-   "last": "2026-11-09 22:17",
+   "last": "2026-11-11 16:33",
    "served": []
   },
   {
@@ -245,6 +251,19 @@ window.LEDGER = {
    "served": []
   },
   {
+   "name": "majesticme201",
+   "visits": 3,
+   "comments": 3,
+   "reels": [
+    "De87Vmwx57c",
+    "DfdcybyHBTV",
+    "DflvBufDDwJ"
+   ],
+   "first": "2026-10-27 01:48",
+   "last": "2026-11-11 15:24",
+   "served": []
+  },
+  {
    "name": "science_almond_flour_uncookie",
    "visits": 3,
    "comments": 3,
@@ -279,18 +298,6 @@ window.LEDGER = {
    ],
    "first": "2026-10-26 23:56",
    "last": "2026-11-05 09:09",
-   "served": []
-  },
-  {
-   "name": "majesticme201",
-   "visits": 2,
-   "comments": 2,
-   "reels": [
-    "De87Vmwx57c",
-    "DfdcybyHBTV"
-   ],
-   "first": "2026-10-27 01:48",
-   "last": "2026-11-08 09:45",
    "served": []
   },
   {
