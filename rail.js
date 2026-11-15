@@ -1,6 +1,6 @@
 // 자동 생성 파일 — 고치지 말고 data/ 아래 json을 고친 뒤 py -3 tools/build_site.py
 window.RAIL = {
- "updated": "2026-11-15 22:00",
+ "updated": "2026-11-16 07:00",
  "reel": "https://www.instagram.com/reel/DflvBufDDwJ/",
  "orders": [
   {
@@ -20,6 +20,12 @@ window.RAIL = {
    "username": "hans_left_pinky_toe",
    "text": "Day one of asking for a cake with the letter J with stars and blue frosting",
    "likes": 1
+  },
+  {
+   "id": "18044868686835064",
+   "username": "st4rs_nd_sp1rals",
+   "text": "happiness, joy ,whimsy, love, and moss stew",
+   "likes": 0
   }
  ]
 };
